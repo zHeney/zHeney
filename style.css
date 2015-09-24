@@ -1,8 +1,8 @@
 @import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900);
 @import url(https://fonts.googleapis.com/css?family=Ek+Mukta);
+
 body{
-    background-color: #4B4536;;
-    /*overflow:hidden; */
+    background-color: #4B4536;
 }
 
 a{
@@ -14,87 +14,101 @@ a, a:focus, a:active, a:hover, object, embed {
     text-decoration: none;
 }
 
-#menu a {
-    display: block;
-    /*margin-bottom: -2px;*/
-}
-
 :focus{
     outline: 0;
 }
 
+#lines, #rings, #trees, #legs , #hat, #feet, #splash, #rock, #bombs, #greenFace{
+    position:absolute;
+    background-repeat: no-repeat; 
+}
+
 #menu, #zHeney, #zHeney2, #jp_container_1, #jp_container_2, #jp_container_3, #jp_container_4 {
     -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
 }
 
 #menu{
     font-size: 1em;
     font-family: 'Alegreya Sans SC', sans-serif;
+    text-align: right;
     position: absolute;
     height: 200px;
-    width: initial;
+    width: 125px;
     z-index: 10;
     left: 39%;
-    margin-left: -67px;
+    margin-left: -123px;
     top: 130px;
 }
-#menu .active{
-    background-color: rgb(183, 166, 135) !important;
-    border-left: 2px solid #D9CCA2;
-    border-bottom: 1px solid #4B4536;
-}
+    #menu .active{
+        background-color: rgb(183, 166, 135) !important;
+        border-left: 2px solid #D9CCA2;
+        border-bottom: 1px solid #4B4536;
+        padding-right: 4px;
+    }
+    #menu p{
+        background: -webkit-linear-gradient(left, rgba(217, 217, 162, 0) 81%, rgba(62, 53, 49, 0.34));
+            background: linear-gradient(to right, rgba(217, 217, 162, 0) 81%, rgba(62, 53, 49, 0.34));
+             background: -o-linear-gradient(left, rgba(217, 217, 162, 0) 81%, rgba(62, 53, 49, 0.34));
+        
+        display: inline-block;
+        border-bottom: 1px solid #4B4536;
+        border-right: 2px solid #4B4536;
+        background-color: rgb(150, 127, 87);
+        padding: 6px 6px 3px 6px;
+    
+        -webkit-transition: all 400ms ease;
+           -moz-transition: all 400ms ease;
+            -ms-transition: all 400ms ease;
+             -o-transition: all 400ms ease;
+                transition: all 400ms ease; 
+    
+    }
+    #menu p:nth-child(1){
+        margin-left: 0px;
+        /*background-color: #7BAF69;*/
+    }
+    #menu p:nth-child(2){
+        margin-left: 29px;
+        /*background-color: #7BAF69;*/
+    }
+    #menu p:nth-child(3){
+        margin-left: 0px;
+        /*background-color: rgb(92, 131, 152);*/
+    }
+    #menu p:nth-child(4){
+        margin-left: 0px;
+        /*background-color: rgb(139, 127, 158);*/
+    }
+    #menu p:nth-child(5){
+        margin-left: 0px;
+        /*background-color: rgba(170, 141, 74, 0.93);*/
+    }
+    #menu p:nth-child(6){
+        margin-left: 0px;
+        /*background-color: rgba(170, 141, 74, 0.93);*/
+    }
+    #menu p:nth-child(7){
+        margin-left: 0px;
+        /*background-color: rgba(170, 141, 74, 0.93);*/
+    }
+    #menu p:nth-child(8){
+        margin-left: 0px;
+        /*background-color: rgba(170, 141, 74, 0.93);*/
+    }
+    
+    #menu p:first-letter {
+        color: #EBE4AF;
+        font-size: 1em;
+        margin-right: 1px;
+    }
 
-#menu p{
-    background: -webkit-linear-gradient(left, rgba(217, 217, 162, 0) 81%, rgba(62, 53, 49, 0.34));
-        background: linear-gradient(to right, rgba(217, 217, 162, 0) 81%, rgba(62, 53, 49, 0.34));
-         background: -o-linear-gradient(left, rgba(217, 217, 162, 0) 81%, rgba(62, 53, 49, 0.34));
-
-    width: initial;
-    border-bottom: 1px solid #4B4536;
-    border-right: 2px solid #4B4536;
-    background-color: rgb(150, 127, 87);
-    padding: 6px 6px 3px 6px;
-
-    -webkit-transition: all 400ms ease;
-       -moz-transition: all 400ms ease;
-        -ms-transition: all 400ms ease;
-         -o-transition: all 400ms ease;
-            transition: all 400ms ease; 
-
-}
-
-a:active #zHeney{
-    -webkit-transform: translate(0, 1px);
-       -moz-transform: translate(0, 1px);
-            transform: translate(0, 1px);
-}
-
-#menu p:nth-child(2){
-    margin-left: 12px;
-    /*background-color: #7BAF69;*/
-}
-#menu p:nth-child(3){
-    margin-left: 0px;
-    /*background-color: rgb(92, 131, 152);*/
-}
-#menu p:nth-child(4){
-    margin-left: 0px;
-    /*background-color: rgb(139, 127, 158);*/
-}
-#menu p:nth-child(5){
-    margin-left: -38px;
-    /*background-color: rgba(170, 141, 74, 0.93);*/
-}
-
-#menu p:first-letter {
-    color: #EBE4AF;
-    font-size: 1em;
-    margin-right: 1px;
-}
-
+    #menu a {
+        padding-right: 0px;
+    }
+    
 #zHeney, #zHeney2{
     position: absolute;
     right: 59%;
@@ -119,10 +133,16 @@ a:active #zHeney{
     /*text-shadow: 0 0 5px #585858;*/
 
     -webkit-transform: scaleY(-1);
-    -moz-transform: scaleY(-1);
-    -o-transform: scaleY(-1);
-    -ms-transform: scaleY(-1);
-    transform: scaleY(-1);
+       -moz-transform: scaleY(-1);
+        -ms-transform: scaleY(-1);
+         -o-transform: scaleY(-1);
+            transform: scaleY(-1);
+}
+
+a:active #zHeney{
+    -webkit-transform: translate(0, 1px);
+       -moz-transform: translate(0, 1px);
+            transform: translate(0, 1px);
 }
 
 @media all and (max-width: 479px){
@@ -149,13 +169,9 @@ a:active #zHeney{
 
 #container{
     /* position: relative; */
-    /* height: 100%; */
-    /* width: 100%; */
 }
 
-#trees, #legs , #rings, #hat, #feet, #splash, #rock, #bombs, #bottomBoard_1, #bottomBoard_2, #bottomBoard_3{
-    position:absolute;
-}
+
 
 /***************** LEFTTSIDE *******************/
 
@@ -169,21 +185,20 @@ a:active #zHeney{
 }
     .beige {
         background: -webkit-radial-gradient(100% 380px, circle closest-corner, rgb(255, 248, 228), rgb(217, 204, 162));
-        background: -moz-radial-gradient(100% 380px, circle closest-corner, rgb(255, 248, 228), rgb(217, 204, 162));
+           background: -moz-radial-gradient(100% 380px, circle closest-corner, rgb(255, 248, 228), rgb(217, 204, 162));
     }
     .red {
         background: -webkit-radial-gradient(110% 380px, circle closest-corner, rgb(217, 204, 85), rgb(196, 80, 80));
-        background: -moz-radial-gradient(110% 380px, circle closest-corner, rgb(217, 204, 85), rgb(196, 80, 80));
+           background: -moz-radial-gradient(110% 380px, circle closest-corner, rgb(217, 204, 85), rgb(196, 80, 80));
     }
 
 #lines{
     background-image: url('pict/lines.png');
     background-repeat: no-repeat;
     height: 916px;
-    width: 49%;
-    top: -24px;
+    width: 54%;
+    top: -36px;
     left: 0;
-    position: absolute;
     z-index: 0;
 }
 @media all and (max-width: 980px) {
@@ -205,7 +220,6 @@ a:active #zHeney{
 #legs {
     display: none;
     background-image: url('pict/legs.png');
-    background-repeat: no-repeat;
     height: 588px;
     width: 195px;
     top: 199px;
@@ -237,12 +251,13 @@ a:active #zHeney{
 @media all and (max-width: 479px) {
     #leftSide{
         background: -webkit-radial-gradient(110% 380px, circle closest-corner, rgb(217, 204, 85), rgb(196, 80, 80));
-        background: -moz-radial-gradient(110% 380px, circle closest-corner, rgb(217, 204, 85), rgb(196, 80, 80));
+           background: -moz-radial-gradient(110% 380px, circle closest-corner, rgb(217, 204, 85), rgb(196, 80, 80));
     }
     #menu{
         top: 79px;
         font-size: 0.9em;
-        margin-left: -63px;  
+            margin-left: -113px;
+    width: 115px;
     }
     #menu p {
         padding: 12px 6px 10px 6px ;
@@ -303,10 +318,9 @@ a:active #zHeney{
 /***************** RIGHTSIDE *******************/
 
 #rightSide{
+    position: relative;
     background: -webkit-linear-gradient(left, rgba(217, 217, 162, 0) 81%, rgba(61, 56, 45));
     background: -moz-linear-gradient(right, rgba(217, 217, 162, 0) 81%, rgba(61, 56, 45));
-    display: block;
-    position: relative;
     display: inline-block;
     background-color: #4B4536;
     height: 800px;
@@ -314,74 +328,65 @@ a:active #zHeney{
     max-width: 900px;
 }
 
-#bombs{
-    background-image: url('pict/bombs.png');
-    height: 672px;
-    width: 100%;
-    top: 36px;
-    left: 0;
-    z-index: 0;
-    background-repeat: no-repeat;
-}
-
-#greenFace{
-    background-image: url('pict/greenFace.png');
-    height: 725px;
-    width: 353px;
-    bottom: 0px;
-    position: absolute;
-    z-index: 0;
-    background-repeat: no-repeat;
-    right: 0;
-}
-
-@media all and (max-width: 980px) {
-    #greenFace {
-        display: none;
+    #bombs{
+        background-image: url('pict/bombs.png');
+        height: 672px;
+        width: 100%;
+        top: 36px;
+        left: 0;
+        z-index: 0;
     }
-}
-@media all and (max-width: 479px) {
-    #rightSide {
-        display: none;
+    
+    #greenFace{
+        background-image: url('pict/greenFace.png');
+        height: 725px;
+        width: 353px;
+        bottom: 0px;
+        z-index: 0;
+        right: 0;
     }
-    #leftSide, #rightSide{
-        height: 650px;
+    
+    @media all and (max-width: 980px) {
+        #greenFace {
+            display: none;
+        }
     }
-}
+    @media all and (max-width: 479px) {
+        #rightSide {
+            display: none;
+        }
+        #leftSide, #rightSide{
+            height: 650px;
+        }
+    }
 
 /***************** BOTTOMTSIDE *******************/
-
 #bottomSide{
     position: relative;
     bottom: 17px;
     height: 100%;
     width: 100%;
 }
+    #bottomBoard_1, #bottomBoard_2, #bottomBoard_3{
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        height: 50px;
+    }
 
-#bottomBoard_1{
-    background: -webkit-linear-gradient(rgba(217, 217, 162, 0) 25%, rgba(216, 203, 162, 0.52));
-    background: -o-linear-gradient(rgba(217, 217, 162, 0) 25%, rgba(216, 203, 162, 0.52));
-    background: linear-gradient(rgba(217, 217, 162, 0) 25%, rgba(216, 203, 162, 0.52));
-    
-    top: 0;
-    left: 0px;
-    width: 100%;
-    height: 50px;
-    background-color: #82755E;
-}
-
-#bottomBoard_2{
-    top: 50px;
-    left: 0px;
-    width: 100%;
-    background-color: #685E4A;
-    height: 50px;
-}
-
-#bottomBoard_3{
-    top: 100px;
-    left: 0px;
-    width: 100%;
-    height: 50px;
-    background-color: #4B4536;
-}
+    #bottomBoard_1{
+        background: -webkit-linear-gradient(rgba(217, 217, 162, 0) 25%, rgba(216, 203, 162, 0.52));
+             background: -o-linear-gradient(rgba(217, 217, 162, 0) 25%, rgba(216, 203, 162, 0.52));
+                background: linear-gradient(rgba(217, 217, 162, 0) 25%, rgba(216, 203, 162, 0.52));
+        
+        top: 0px;
+        background-color: #82755E;
+    }    
+    #bottomBoard_2{
+        top: 50px;
+        background-color: #685E4A;
+    }    
+    #bottomBoard_3{
+        top: 100px;
+        background-color: #4B4536;
+    }

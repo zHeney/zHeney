@@ -21,6 +21,7 @@
 	<script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
 	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
 	<script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
+	<script type="text/javascript" src="js/playlistContents.js"></script>
 
 </head>
 
@@ -41,7 +42,7 @@
 <!-- Menu -->
 			<div id="menu">
 				<p class="active"><a href="#1" data-ref="slider-id another-slider">Sympho</a></p>
-				<p><a href="#2" data-ref="slider-id another-slider">Cyber</a></p>
+				<p><a href="#2" data-ref="slider-id another-slider">Cyber Apocalypse</a></p>
 				<p><a href="#3" data-ref="slider-id another-slider">Gloomy</a></p>
 				<p><a href="#4" data-ref="slider-id another-slider">HipHop</a></p>
 				<p><a href="#5" data-ref="slider-id another-slider">Experiments</a></p>
