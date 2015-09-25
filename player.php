@@ -67,4 +67,11 @@
 					<?php
 					require 'structurePlayer.php';
 					?>
-				</div>					
+				</div>		
+<!-- PLAYER 10 -->
+				<div id="jquery_jplayer_10" class="jp-jplayer" ></div>
+				<div id="jp_container_10" class="jp-audio">
+					<?php
+					require 'structurePlayer.php';
+					?>
+				</div>				

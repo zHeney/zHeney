@@ -123,7 +123,7 @@ a, a:focus, a:active, a:hover, object, embed {
     font-family: 'Alegreya Sans SC', sans-serif;
     color: rgb(170, 171, 134);
     line-height: 0.5;
-    z-index: 1;
+    z-index: 5;
     mix-blend-mode: overlay;
     text-shadow: 0px 1px 1px #FFDFB6, 3px 0px 2px rgb(75, 69, 54);
 }
@@ -186,6 +186,7 @@ a:active #zHeney{
     height: 800px;
     max-width: 920px;
     width: 55%;
+
 }
     .beige {
         background: -webkit-radial-gradient(100% 380px, circle closest-corner, rgb(255, 248, 228), rgb(217, 204, 162));
@@ -360,7 +361,7 @@ a:active #zHeney{
             display: none;
         }
         #leftSide, #rightSide{
-            height: 650px;
+            height: 700px;
         }
     }
 
