@@ -41,11 +41,16 @@
 			<h1 id="zHeney2">zHeney</h1>
 <!-- Menu -->
 			<div id="menu">
-				<p class="active"><a href="#1" data-ref="slider-id another-slider">Sympho</a></p>
-				<p><a href="#2" data-ref="slider-id another-slider">Cyber Apocalypse</a></p>
-				<p><a href="#3" data-ref="slider-id another-slider">Gloomy</a></p>
-				<p><a href="#4" data-ref="slider-id another-slider">HipHop</a></p>
-				<p><a href="#5" data-ref="slider-id another-slider">Experiments</a></p>
+				<p class="active">
+				   <a href="#1" data-ref="slider-id another-slider">Cyber Apocalypse</a></p>
+				<p><a href="#2" data-ref="slider-id another-slider">Experiments</a></p>
+				<p><a href="#3" data-ref="slider-id another-slider">Trip</a></p>
+				<p><a href="#4" data-ref="slider-id another-slider">Gloomy-Hop</a></p>
+				<p><a href="#5" data-ref="slider-id another-slider">Electronic</a></p>
+				<p><a href="#6" data-ref="slider-id another-slider">90bpm-HipHop</a></p>
+				<p><a href="#7" data-ref="slider-id another-slider">Funky-Blues</a></p>
+				<p><a href="#8" data-ref="slider-id another-slider">Piano-Guitar</a></p>
+				<p><a href="#9" data-ref="slider-id another-slider">Sympho</a></p>
 			</div>	
 
 <!-- Slider -->
