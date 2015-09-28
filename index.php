@@ -28,14 +28,18 @@
 
             <!-- **************** LEFTSIDE ****************** -->
             <div id="leftSide" class="beige">
+                <div id="clouds"></div>
                 <div id="lines"></div>
                 <div id="legs"></div>
                 <div id="rings"></div>
                 <div id="hat"></div>		 
                 <div id="splash"></div>
                 <div id="rock"></div>
-                <a href="#"><h1 id="zHeney">zHeney</h1></a>
-                <h1 id="zHeney2">zHeney</h1>
+                <a href="#">
+                	<h1 id="zHeney">zHeney</h1>
+                	<h1 id="zHeney2">zHeney</h1>
+                </a>
+                
                 <!-- Menu -->
                 <div id="menu">
                     <p class="active">
@@ -50,12 +54,18 @@
                     <p><a href="#8" data-ref="slider-id another-slider">Funky-Blues</a></p>
                     <p><a href="#9" data-ref="slider-id another-slider">Piano-Guitar</a></p>
                     <p><a href="#10" data-ref="slider-id another-slider">Sympho</a></p>
+                    <p><a href="#11" data-ref="slider-id another-slider">Contacts</a></p>
                 </div>
 
                 <!-- Slider -->
                 <div class="coda-slider" id="slider-id">
                     <!-- Player -->
                     <?php require 'player.php'; ?>
+                    <div id="contacts">
+                    	<p><a target="blank" href="https://www.facebook.com/zheney.evgeny">facebook.com</a></p>
+                    	<p><a target="blank" href="https://vk.com/zheney">vk.com</a></p>
+                    	<p><a target="blank" href="http://zheney.deviantart.com/">deviantart.com</a></p>
+                    </div>
                 </div>
                 <!-- /CodaSlider -->
             </div><!--
@@ -63,7 +73,10 @@
         **************** RIGHTSIDE ****************** 
          --><div id="rightSide">
                 <div id="bombs"></div>
-                <div id="greenFace"></div>
+                <div id="ballBrown"></div>
+                <div id="ballGreen"></div>
+                <div id="boomFace">
+                </div>
             </div>
         </div><!-- /container -->
 

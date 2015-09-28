@@ -1,105 +1,53 @@
-/***********************************************************************
-  jQuery Coda-Slider v3.0 - kevinbatdorf.github.com/codaslider
-  Copyright (c) 2012 Kevin Batdorf
-  This plugin available for use in all personal or commercial projects under both MIT and GPL licenses.
-************************************************************************/
-/********************************************
-SASS stylesheet.
-
-No idea what CSS preprocessing is all about? No problem... just use the style.css file instead.
-If you want to learn more, check out this article by Chris Coyier
-
-css-tricks.com/musings-on-preprocessing/
-
-********************************************/
+/*  jQuery Coda-Slider v3.0 - kevinbatdorf.github.com/codaslider
+    Copyright (c) 2012 Kevin Batdorf  
+*/
 
 .coda-slider-wrapper {
+   width: 249px !important;
+  overflow: hidden;
   top: 100px;
   left: 39%;
-  /* margin-top: 100px; */
-  /* margin-left: 39%; *//*******************************************************
-  *
-  * Most common stuff you'll need to change 
-  * will be below this line.
-  *
-  ********************************************************//******************************************************
-  * 
-  * Main wrapper padding 
-  *
-  *******************************************************/
-  /* padding-right: 123px; */
   z-index: 10;
   position: absolute;
 }
 
 @media all and (max-width: 479px) {
     .coda-slider-wrapper{
-        left: 50%;
-        top: 47px;
+      margin-left: 3px;
+      left: 50%;
+      top: 47px;
     }
 }
   
-  .coda-slider-wrapper .coda-slider {/******************************************************
-    * 
-    * Inner wrapper styles 
-    *
-    *******************************************************/
+  .coda-slider-wrapper .coda-slider {
+
     /*background: green;*/
-    /******************************************************
-    * 
-    * Width of the container. Typically you will want to 
-    * match this with the width of the panel as well. 
-    *
-    *******************************************************/
-    width: 260px;
+    width: 257px;
     height: 685px;
   }
     
-    .coda-slider-wrapper .coda-slider .panel {/******************************************************
-      * 
-      * Width of each individual panel. 
-      * Typically you will want to match this with the width 
-      * of the container as well. 
-      *
-      *******************************************************/
-       width: 252px; 
+    .coda-slider-wrapper .coda-slider .panel {
+        width: 249px;
     }
       
       .coda-slider-wrapper .coda-slider .panel .panel-wrapper {
-        /******************************************************
-        * 
-        * Panel wrapper styles 
-        *
-        *******************************************************/
-      margin-top: 25px;
-      margin-right: 27px;
-      margin-left: 27px;
+        margin-top: 25px;
+        margin-right: 24px;
+        margin-left: 23px;
+        margin-bottom: 10px;
       }
   
+  /************* Tab styles ***************/ 
+
   .coda-slider-wrapper .coda-nav {
-    margin-left: 291px;
-    /******************************************************
-    * 
-    * Tab styles 
-    *
-    *******************************************************/ 
+
   }
     
     .coda-slider-wrapper .coda-nav .current {
-      /******************************************************
-      * 
-      * Current tab styles 
-      *
-      *******************************************************/
-      background: #685E4A; 
+      /* Current tab styles */
     }
     
     .coda-slider-wrapper .coda-nav a {
-      /******************************************************
-      * 
-      * Tab styles 
-      *
-      *******************************************************/
       background: #4B4536;
       color: #fff;
       margin-right: -71px;
@@ -108,25 +56,14 @@ css-tricks.com/musings-on-preprocessing/
     }
     
     .coda-slider-wrapper .coda-nav a:hover {
-      /******************************************************
-      * 
-      * Tab styles 
-      *
-      *******************************************************/
       background: #685E4A;
       color: #fff;
       text-shadow: none; 
     }
   
 
-    /************************************************
-    * 
-    * Graphical arrows active
-    *
-    *************************************************/
-    margin-top: 55px; 
-  }
-  
+    /***************Graphical arrows active**************/
+
   .coda-slider-wrapper .loading {
     /******************************************************
     * 
@@ -190,6 +127,7 @@ css-tricks.com/musings-on-preprocessing/
         *************************************************/
         display: block;
         float: left;
+        box-shadow: inset 0px 0px 61px rgba(0,0,0,0.2);
       }
   
   .coda-slider-wrapper .coda-nav {

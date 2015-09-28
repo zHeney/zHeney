@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ek+Mukta);
 
 body{
-    background-color: #4B4536;
+    background-color: #413B2F;
 }
 
 a{
@@ -18,12 +18,12 @@ a, a:focus, a:active, a:hover, object, embed {
     outline: 0;
 }
 
-#lines, #rings, #trees, #legs , #hat, #feet, #splash, #rock, #bombs, #greenFace{
+#clouds, #lines, #rings, #trees, #legs , #hat, #feet, #splash, #rock, #bombs, #boomFace{
     position:absolute;
     background-repeat: no-repeat; 
 }
 
-#menu, #zHeney, #zHeney2, #jp_container_1, #jp_container_2, #jp_container_3, #jp_container_4 {
+#menu, #zHeney, #zHeney2, #slider-id {
     -webkit-user-select: none;
        -moz-user-select: none;
         -ms-user-select: none;
@@ -48,72 +48,68 @@ a, a:focus, a:active, a:hover, object, embed {
         border-bottom: 1px solid #4B4536;
         padding-right: 4px;
     }
-    #menu p{
-        background: -webkit-linear-gradient(left, rgba(217, 217, 162, 0) 81%, rgba(62, 53, 49, 0.34));
-            background: linear-gradient(to right, rgba(217, 217, 162, 0) 81%, rgba(62, 53, 49, 0.34));
-             background: -o-linear-gradient(left, rgba(217, 217, 162, 0) 81%, rgba(62, 53, 49, 0.34));
-        
+    #menu p{         
         display: inline-block;
         border-bottom: 1px solid #4B4536;
         border-right: 2px solid #4B4536;
-        background-color: rgb(150, 127, 87);
+        background: linear-gradient(to right, rgba(217, 217, 162, 0) 81%, rgba(62, 53, 49, 0.34));
+        /*background-color: rgb(164, 133, 79); */
+        background-color: rgb(150, 127, 87);        
         padding: 6px 6px 3px 6px;
     
         -webkit-transition: all 400ms ease;
            -moz-transition: all 400ms ease;
             -ms-transition: all 400ms ease;
              -o-transition: all 400ms ease;
-                transition: all 400ms ease; 
+                transition: all 400ms ease;   
+    }
+
+        #menu p:first-child{
+            margin-left: 27px;
+        }
+        #menu p:nth-child(2){
     
-    }
-    #menu p:nth-child(1){
-        margin-left: 29px;
-        /*background-color: #7BAF69;*/
-    }
-    #menu p:nth-child(2){
-        margin-left: 0px;
-        /*background-color: #7BAF69;*/
-    }
-    #menu p:nth-child(3){
-        margin-left: 0px;
-        /*background-color: rgb(92, 131, 152);*/
-    }
-    #menu p:nth-child(4){
-        margin-left: 0px;
-        /*background-color: rgb(139, 127, 158);*/
-    }
-    #menu p:nth-child(5){
-        margin-left: 0px;
-        /*background-color: rgba(170, 141, 74, 0.93);*/
-    }
-    #menu p:nth-child(6){
-        margin-left: 0px;
-        /*background-color: rgba(170, 141, 74, 0.93);*/
-    }
-    #menu p:nth-child(7){
-        margin-left: 0px;
-        /*background-color: rgba(170, 141, 74, 0.93);*/
-    }
-    #menu p:nth-child(8){
-        margin-left: 0px;
-        /*background-color: rgba(170, 141, 74, 0.93);*/
-    }
-    #menu p:nth-child(9){
-        margin-left: 0px;
-        /*background-color: rgba(170, 141, 74, 0.93);*/
-    }
+        }
+        #menu p:nth-child(3){
     
-    #menu p:first-letter {
-        color: #EBE4AF;
-        font-size: 1em;
-        margin-right: 1px;
-    }
+        }
+        #menu p:nth-child(4){
+    
+        }
+        #menu p:nth-child(5){
+    
+        }
+        #menu p:nth-child(6){
+    
+        }
+        #menu p:nth-child(7){
+    
+        }
+        #menu p:nth-child(8){
+    
+        }
+        #menu p:nth-child(9){
+    
+        }
+        #menu p:nth-child(10){
+    
+        }
+        #menu p:nth-child(11){
+            background-color: rgb(200, 164, 68);
+        }        
+        
+        #menu p:first-letter {
+            color: #EBE4AF;
+            font-size: 1em;
+            margin-right: 1px;
+        }
 
     #menu a {
         padding-right: 0px;
     }
     
 #zHeney, #zHeney2{
+    display: none;
     position: absolute;
     right: 59%;
     margin-right: -319px;
@@ -129,7 +125,6 @@ a, a:focus, a:active, a:hover, object, embed {
 }
 
 #zHeney2{    
-    display: none;
     top: 795px;
     opacity: 0.5;
     color: #585858;
@@ -155,10 +150,10 @@ a:active #zHeney{
         mix-blend-mode: darken;
     }
     #zHeney2{
-        display: block;
         top: 789px;
     }    
     #zHeney, #zHeney2 {
+        display: block;
         font-size: 37px;
         margin: 0px;
         position: static;
@@ -175,15 +170,15 @@ a:active #zHeney{
     /* position: relative; */
 }
 
-
-
 /***************** LEFTTSIDE *******************/
+#leftSide, #rightSide{
+    height: 800px;
+    position: relative;
+    display: inline-block;
+}
 
 #leftSide{
     background-color: #D9CCA2;
-    display: inline-block;
-    position: relative;
-    height: 800px;
     max-width: 920px;
     width: 55%;
 
@@ -201,10 +196,10 @@ a:active #zHeney{
     background-image: url('pict/lines.png');
     background-repeat: no-repeat;
     height: 916px;
-    width: 54%;
     top: -36px;
     left: 0;
     z-index: 0;
+    width: 53%;
 }
 @media all and (max-width: 980px) {
     #lines{
@@ -218,8 +213,8 @@ a:active #zHeney{
     width: 513px;
     top: 18px;
     right: 59%;
-    margin-right: -211px;
     z-index: 2;
+    margin-right: -205px;
 }
 
 #legs {
@@ -261,8 +256,8 @@ a:active #zHeney{
     #menu{
         top: 79px;
         font-size: 0.9em;
-            margin-left: -113px;
-    width: 115px;
+        margin-left: -110px;
+        width: 115px;
     }
     #menu p {
         padding: 12px 6px 10px 6px ;
@@ -277,12 +272,12 @@ a:active #zHeney{
         display: none;
     }
     #lines{
-        top: 21px;
+        top: 0px;
         height: 726px;
     }
     #legs{
         display: block;
-        top: 46px;
+        top: 96px;
         left: 50%;
         margin-left: 28px;
     }   
@@ -303,6 +298,14 @@ a:active #zHeney{
     }
 }
 
+#clouds{
+    background-image: url('pict/clouds.png');
+    height: 303px;
+    width: 100%;
+    top: 24px;
+    left: 0;
+}
+
 #rock{
     background-image: url('pict/rock.png');
     right: -2px;
@@ -313,22 +316,68 @@ a:active #zHeney{
 
 /***************** PLAYER *******************/
 
-#jp_container_1, #jp_container_2, #jp_container_3, #jp_container_4{
+#slider-id{
 
     z-index: 10;
     /*box-shadow: 0px 0px 12px rgb(75, 69, 54);*/
 
 }
 
+#contacts{
+    
+    background-color: #2C271A;
+    background: url('pict/contactsBackground.png') 2px 90px no-repeat, -moz-linear-gradient(left, #4b4537 0%, #252116 100%);
+    background: url('pict/contactsBackground.png') 2px 90px no-repeat, -webkit-gradient(linear, left top, right top, color-stop(0%,#4b4537), color-stop(100%,#252116));
+    background: url('pict/contactsBackground.png') 2px 90px no-repeat, -webkit-linear-gradient(left, #4b4537 0%,#252116 100%);
+    background: url('pict/contactsBackground.png') 2px 90px no-repeat, -o-linear-gradient(left, #4b4537 0%,#252116 100%);
+    background: url('pict/contactsBackground.png') 2px 90px no-repeat, -ms-linear-gradient(left, #4b4537 0%,#252116 100%);
+    background: url('pict/contactsBackground.png') 2px 90px no-repeat, linear-gradient(to right, #4b4537 0%,#252116 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4b4537', endColorstr='#252116',GradientType=1 );
+
+    display: inline-block;
+    width: 255px;
+    height: 480px;
+    box-shadow: inset 4px 0px 61px rgba(0,0,0,0.2);
+    text-align: center;
+ 
+}
+
+    #contacts p {
+        line-height: 0.7;
+    }
+        #contacts p a{
+            font-family: 'Alegreya Sans SC', sans-serif;
+            vertical-align: -webkit-baseline-middle;
+            text-shadow: -3px 3px 0px #413B2F, -4px 5px 0px rgb(144, 123, 85);
+        }
+    
+            #contacts p:first-child a{
+                font-size: 25px;
+                color: #84A3E1;
+            }
+            #contacts p:nth-child(2){ 
+            }   
+            #contacts p:nth-child(2) a{
+                font-size: 50px;
+                color: #6E9ED0;    
+            }
+            #contacts p:nth-child(3) a{
+                font-size: 22px;
+                color: #C1D1BC;    
+            }        
+
 /***************** RIGHTSIDE *******************/
 
 #rightSide{
-    position: relative;
-    background: -webkit-linear-gradient(left, rgba(217, 217, 162, 0) 81%, rgba(61, 56, 45));
-    background: -moz-linear-gradient(right, rgba(217, 217, 162, 0) 81%, rgba(61, 56, 45));
-    display: inline-block;
-    background-color: #4B4536;
-    height: 800px;
+    background: rgb(65,59,47);
+    background: -moz-linear-gradient(left,  rgba(65,59,47,1) 18%, rgba(65,59,47,1) 18%, rgba(75,69,54,1) 61%, rgba(55,50,40,1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(18%,rgba(65,59,47,1)), color-stop(18%,rgba(65,59,47,1)), color-stop(61%,rgba(75,69,54,1)), color-stop(100%,rgba(55,50,40,1)));
+    background: -webkit-linear-gradient(left,  rgba(65,59,47,1) 18%,rgba(65,59,47,1) 18%,rgba(75,69,54,1) 61%,rgba(55,50,40,1) 100%);
+    background: -o-linear-gradient(left,  rgba(65,59,47,1) 18%,rgba(65,59,47,1) 18%,rgba(75,69,54,1) 61%,rgba(55,50,40,1) 100%);
+    background: -ms-linear-gradient(left,  rgba(65,59,47,1) 18%,rgba(65,59,47,1) 18%,rgba(75,69,54,1) 61%,rgba(55,50,40,1) 100%);
+    background: linear-gradient(to right,  rgba(65,59,47,1) 18%,rgba(65,59,47,1) 18%,rgba(75,69,54,1) 61%,rgba(55,50,40,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#413b2f', endColorstr='#373228',GradientType=1 );
+
     width: 45%;
     max-width: 900px;
 }
@@ -339,20 +388,38 @@ a:active #zHeney{
         width: 100%;
         top: 36px;
         left: 0;
-        z-index: 0;
+        z-index: 1;
     }
     
-    #greenFace{
-        background-image: url('pict/greenFace.png');
+    #boomFace{
+        background-image: url('pict/boomFace.png');
         height: 725px;
-        width: 353px;
+        width: 409px;
         bottom: 0px;
         z-index: 0;
         right: 0;
     }
+
+        #ballBrown, #ballGreen{
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 76px;
+            right: 57px;
+            height: 253px;
+            width: 353px;
+
+        }
+        #ballBrown{
+            display: block;
+            background-image: url('pict/ballBrown.png');
+        }
+        #ballGreen{
+            display: none;
+            background-image: url('pict/ballBrown.png');
+        }
     
     @media all and (max-width: 980px) {
-        #greenFace {
+        #boomFace, #ballBrown, #ballGreen {
             display: none;
         }
     }

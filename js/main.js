@@ -2,7 +2,7 @@ $(document).ready(function(){
 // Coda Slider
     $('#slider-id').codaSlider({
             dynamicTabs:false, 
-            firstPanelToLoad: 1,
+            firstPanelToLoad: 11,
             slideEaseDuration: 400
     });
 
@@ -12,7 +12,7 @@ $(document).ready(function(){
 	$(this).parent().addClass("active");
     });
 
-    // #zHeney OnClick
+// #zHeney OnClick
     $('#zHeney').click(function(){
         if ($("#leftSide").hasClass('beige')) {
             $("#leftSide").removeClass('beige').addClass('red');
@@ -20,6 +20,12 @@ $(document).ready(function(){
         }
         $("#leftSide").removeClass('red').addClass('beige');
     });
+
+// Experiments OnClick
+    // $("#menu p a").click(function(){
+    // $(".active").removeClass("active");
+    // $(this).parent().addClass("active");
+    // });
 
     // Player
     $(".jp-jplayer").bind($.jPlayer.event.volumechange,function (event){
