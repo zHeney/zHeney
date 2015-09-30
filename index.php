@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="coda-slider.css" />
         <link rel="stylesheet" href="jplayer/jplayer.css" />
 
+        <script type="text/javascript" src="js/prefixfree.min.js"></script>
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.coda-slider-3.0.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
@@ -27,7 +28,8 @@
         <div id="container">
 
             <!-- **************** LEFTSIDE ****************** -->
-            <div id="leftSide" class="beige">
+            <div id="leftSide">
+            	<div id="bGround" class="blue"></div>
                 <div id="clouds"></div>
                 <div id="lines"></div>
                 <div id="legs"></div>
@@ -42,9 +44,7 @@
                 
                 <!-- Menu -->
                 <div id="menu">
-                    <p class="active">
-                       <a href="#1" data-ref="slider-id another-slider">Cyber Apocalypse</a>
-                    </p>
+                    <p><a href="#1" data-ref="slider-id another-slider">Cyber Apocalypse</a></p>
                     <p><a href="#2" data-ref="slider-id another-slider">Experiments</a></p>
                     <p><a href="#3" data-ref="slider-id another-slider">Trip</a></p>
                     <p><a href="#4" data-ref="slider-id another-slider">Gloomy-Hop</a></p>
@@ -54,7 +54,7 @@
                     <p><a href="#8" data-ref="slider-id another-slider">Funky-Blues</a></p>
                     <p><a href="#9" data-ref="slider-id another-slider">Piano-Guitar</a></p>
                     <p><a href="#10" data-ref="slider-id another-slider">Sympho</a></p>
-                    <p><a href="#11" data-ref="slider-id another-slider">Contacts</a></p>
+                    <p class="active"><a href="#11" data-ref="slider-id another-slider">Contacts</a></p>
                 </div>
 
                 <!-- Slider -->
@@ -73,8 +73,8 @@
         **************** RIGHTSIDE ****************** 
          --><div id="rightSide">
                 <div id="bombs"></div>
-                <div id="ballBrown"></div>
                 <div id="ballGreen"></div>
+                <div id="ballBrown"></div>
                 <div id="boomFace">
                 </div>
             </div>
@@ -84,11 +84,12 @@
         <div id="bottomSide">
             <div id="bottomBoard_1"></div>
             <div id="bottomBoard_2"></div>
+            <div id="wave"></div> 
             <div id="bottomBoard_3">
                 <a href="http://metrika.yandex.ru/stat/?id=17947261&amp;from=informer" target="_blank" rel="nofollow">	
                     <img src="//bs.yandex.ru/informer/17947261/3_0_4B4536FF_4B4536FF_1_pageviews" style="width: 88px; height: 31px; border: 0;" />
-                </a>
-            </div> 
+                </a>                
+            </div>
         </div>
 
         <!-- analitics -->
