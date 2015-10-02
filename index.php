@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="coda-slider.css" />
         <link rel="stylesheet" href="jplayer/jplayer.css" />
 
-        <script type="text/javascript" src="js/prefixfree.min.js"></script>
+        <!--<script type="text/javascript" src="js/prefixfree.min.js"></script>-->
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.coda-slider-3.0.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
@@ -29,7 +29,7 @@
 
             <!-- **************** LEFTSIDE ****************** -->
             <div id="leftSide">
-            	<div id="bGround" class="blue"></div>
+            	<div id="bGroundLeft" class="blue"></div>
                 <div id="clouds"></div>
                 <div id="lines"></div>
                 <div id="legs"></div>
@@ -72,13 +72,17 @@
 
         **************** RIGHTSIDE ****************** 
          --><div id="rightSide">
-                <div id="bombs"></div>
-                <div id="ballGreen"></div>
-                <div id="ballBrown"></div>
-                <div id="boomFace">
-                </div>
-            </div>
-        </div><!-- /container -->
+         		<div id="bGroundRight">
+					<div id="boomBlock">
+                		<div id="bombs"></div>
+                		<div id="underBall">                
+                			<div id="Ball" class="ballBlue"></div>
+                		</div>
+                		<div id="boomFace"></div>	
+                	</div>
+                </div>	
+            </div><!-- /container -->
+        </div>
 
         <!--**************** BOTTOMTSIDE ******************-->
         <div id="bottomSide">

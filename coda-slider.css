@@ -3,7 +3,7 @@
 */
 
 .coda-slider-wrapper {
-   width: 249px !important;
+  width: 249px !important;
   overflow: hidden;
   top: 100px;
   left: 39%;
@@ -13,7 +13,7 @@
 
 @media all and (max-width: 479px) {
     .coda-slider-wrapper{
-      margin-left: 3px;
+      margin-left: 0px;
       left: 50%;
       top: 47px;
     }
@@ -22,7 +22,7 @@
   .coda-slider-wrapper .coda-slider {
 
     /*background: green;*/
-    width: 257px;
+    width: 249px;
     height: 685px;
   }
     
@@ -125,9 +125,10 @@
         * Panel styles 
         *
         *************************************************/
+
         display: block;
         float: left;
-        box-shadow: inset 0px 0px 61px rgba(0,0,0,0.2);
+        box-shadow: inset 4px 0px 61px rgba(0,0,0,0.2), inset -6px 1px 13px 0px rgba(255, 255, 255, 0.08);
       }
   
   .coda-slider-wrapper .coda-nav {

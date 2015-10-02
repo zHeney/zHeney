@@ -13,8 +13,6 @@ div.jp-video {
 	color: #fff;
 	/*border-radius: 10px;*/
     border-top: 1px solid #352D2A;
-    border-left: 4px solid #352D2A;
-    border-right: 4px solid #352D2A;
     border-bottom: 1px solid #352D2A;
     background-color: #3e3531;
 }
@@ -614,10 +612,6 @@ div.jp-jplayer {
 	padding:5px;
 	font-size:.8em;
 	background-color:#3a2a45;
-	border-top:2px solid #554461;
-	border-left:2px solid #554461;
-	border-right:2px solid #180a1f;
-	border-bottom:2px solid #180a1f;
 	color:#FFF;
 	display:none;
 }
