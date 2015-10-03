@@ -29,7 +29,7 @@
 
             <!-- **************** LEFTSIDE ****************** -->
             <div id="leftSide">
-            	<div id="bGroundLeft" class="blue"></div>
+                <div id="bGroundLeft" class="blue"></div>
                 <div id="clouds"></div>
                 <div id="lines"></div>
                 <div id="legs"></div>
@@ -38,23 +38,23 @@
                 <div id="splash"></div>
                 <div id="rock"></div>
                 <a href="#">
-                	<h1 id="zHeney">zHeney</h1>
-                	<h1 id="zHeney2">zHeney</h1>
+                    <h1 id="zHeney">zHeney</h1>
+                    <h1 id="zHeney2">zHeney</h1>
                 </a>
-                
+
                 <!-- Menu -->
                 <div id="menu">
-                    <p><a href="#1" data-ref="slider-id another-slider">Cyber Apocalypse</a></p>
-                    <p><a href="#2" data-ref="slider-id another-slider">Experiments</a></p>
-                    <p><a href="#3" data-ref="slider-id another-slider">Trip</a></p>
-                    <p><a href="#4" data-ref="slider-id another-slider">Gloomy-Hop</a></p>
-                    <p><a href="#5" data-ref="slider-id another-slider">Lyric-Hop</a></p>
-                    <p><a href="#6" data-ref="slider-id another-slider">90bpm-HipHop</a></p>
-                    <p><a href="#7" data-ref="slider-id another-slider">Electronic</a></p>
-                    <p><a href="#8" data-ref="slider-id another-slider">Funky-Blues</a></p>
-                    <p><a href="#9" data-ref="slider-id another-slider">Piano-Guitar</a></p>
-                    <p><a href="#10" data-ref="slider-id another-slider">Sympho</a></p>
-                    <p class="active"><a href="#11" data-ref="slider-id another-slider">Contacts</a></p>
+                    <p><a leftSideClass="beige" rightSideClass="ballBrown" href="#1" data-ref="slider-id another-slider">Cyber Apocalypse</a></p>
+                    <p><a leftSideClass="red" rightSideClass="flame" href="#2" data-ref="slider-id another-slider">Experiments</a></p>
+                    <p><a leftSideClass="beige" rightSideClass="trip" href="#3" data-ref="slider-id another-slider">Trip</a></p>
+                    <p><a leftSideClass="red" rightSideClass="treeBirds" href="#4" data-ref="slider-id another-slider">Gloomy-Hop</a></p>
+                    <p><a leftSideClass="beige" rightSideClass="birds" href="#5" data-ref="slider-id another-slider">Lyric-Hop</a></p>
+                    <p><a leftSideClass="red" rightSideClass="tape" href="#6" data-ref="slider-id another-slider">90bpm-HipHop</a></p>
+                    <p><a leftSideClass="beige" rightSideClass="cubes" href="#7" data-ref="slider-id another-slider">Electronic</a></p>
+                    <p><a leftSideClass="red" rightSideClass="rex" href="#8" data-ref="slider-id another-slider">Funky-Blues</a></p>
+                    <p><a leftSideClass="beige" rightSideClass="piano" href="#9" data-ref="slider-id another-slider">Piano-Guitar</a></p>
+                    <p><a leftSideClass="red" rightSideClass="orch" href="#10" data-ref="slider-id another-slider">Sympho</a></p>
+                    <p class="active"><a leftSideClass="blue" rightSideClass="cubes" href="#11" data-ref="slider-id another-slider">Contacts</a></p>
                 </div>
 
                 <!-- Slider -->
@@ -62,24 +62,18 @@
                     <!-- Player -->
                     <?php require 'player.php'; ?>
                     <div id="contacts">
-                    	<p><a target="blank" href="https://www.facebook.com/zheney.evgeny">facebook.com</a></p>
-                    	<p><a target="blank" href="https://vk.com/zheney">vk.com</a></p>
-                    	<p><a target="blank" href="http://zheney.deviantart.com/">deviantart.com</a></p>
+                        <p><a target="blank" href="https://www.facebook.com/zheney.evgeny">facebook.com</a></p>
+                        <p><a target="blank" href="https://vk.com/zheney">vk.com</a></p>
+                        <p><a target="blank" href="http://zheney.deviantart.com/">deviantart.com</a></p>
                     </div>
                 </div>
                 <!-- /CodaSlider -->
             </div><!--
 
         **************** RIGHTSIDE ****************** 
-         --><div id="rightSide">
-         		<div id="bGroundRight">
-					<div id="boomBlock">
-                		<div id="bombs"></div>
-                		<div id="underBall">                
-                			<div id="Ball" class="ballBlue"></div>
-                		</div>
-                		<div id="boomFace"></div>	
-                	</div>
+            --><div id="rightSide">
+                <div id="bGroundRight">
+                    
                 </div>	
             </div><!-- /container -->
         </div>
