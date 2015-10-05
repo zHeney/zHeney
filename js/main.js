@@ -16,7 +16,27 @@ $('#clouds').animate({ 'background-position-x': '-100000000000%',}, 40000000000,
 	    $(this).parent().addClass("active");
     });
 
-//  double Click switcher
+// left/right Side backgrounds   
+    var fadeTime = 400;
+   
+    $("#menu p a").click(function(){
+        var leftSideClass = $(this).attr("leftSideClass");
+        var rightSideClass = $(this).attr("rightSideClass");
+        
+        $("#leftSide").removeClass().addClass(leftSideClass);
+        $("#bGroundLeft").fadeOut(fadeTime,function(){
+            $(this).removeClass().addClass(leftSideClass);
+            $(this).fadeIn(fadeTime);            
+        });
+               
+        $("#bGroundRight").fadeOut(fadeTime,function(){
+            $(this).removeClass().addClass(rightSideClass);
+            $(this).fadeIn(fadeTime);
+        });        
+ 
+    });
+
+    //  **************************double Click switcher
     // $('#menu p:first-child a').click(function(){
     //     if ($("#leftSide").hasClass('blue')) {
     //         $("#leftSide").removeClass('blue').addClass('beige');
@@ -25,36 +45,7 @@ $('#clouds').animate({ 'background-position-x': '-100000000000%',}, 40000000000,
     //     $("#leftSide").removeClass('red').addClass('beige');
     // });
 
-
-    var fadeTime = 400;
-
-
-    $("#menu p a").click(function(){
-        var leftSideClass = $(this).attr("leftSideClass");
-        var rightSideClass = $(this).attr("rightSideClass");
-        
-        
-        
-        
-        $("#bGroundLeft").fadeOut(fadeTime,function(){
-            $(this).removeClass().addClass(leftSideClass);
-            $(this).fadeIn(fadeTime);            
-        });
-        
-        
-        
-        
-        $("#bGroundRight").fadeOut(fadeTime,function(){
-            $(this).removeClass().addClass(rightSideClass);
-            $(this).fadeIn(fadeTime);
-        });
-        
-        
- 
-    });
-
-
-   // ************************* slideUp 
+    // ************************* slideUp 
     // $("#bombs").click(function() {
     // $("#clouds").slideUp(1000);
     // });
@@ -71,7 +62,7 @@ $('#clouds').animate({ 'background-position-x': '-100000000000%',}, 40000000000,
 
     // Player
     $(".jp-jplayer").bind($.jPlayer.event.volumechange,function (event){
-        $(".jp-jplayer").jPlayer("volume",event.jPlayer.options.volume);		
+        $(".jp-jplayer").jPlayer("volume",event.jPlayer.options.volume);        
     });
     
     $(".jp-jplayer").bind($.jPlayer.event.play,function (event){

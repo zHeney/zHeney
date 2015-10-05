@@ -440,11 +440,16 @@ a, a:focus, a:active, a:hover, object, embed {
         background: url('pict/rex.png') no-repeat center bottom;
     }
     .trip{
-        background: url('pict/trip.png') no-repeat center bottom;
+        background: url('pict/trip.png') no-repeat center 69px;
     }
-    #boomBlock{ }
+    .boomBlock{
+        background: url('pict/bombs.png') top left,
+                    url('pict/boomFace.png') bottom right;
+                                     
+        background-repeat: no-repeat;
+    }
 
-        #bombs{
+/*        #bombs{
             background-image: url('pict/bombs.png');
             height: 672px;
             width: 100%;
@@ -472,7 +477,7 @@ a, a:focus, a:active, a:hover, object, embed {
                 #Ball, .ballBrown, .ballGreen, .ballBlue{                
                     height: 253px;
                     width: 253px;
-                }
+                }*/
 
         /* gradient permalink
         http://www.colorzilla.com/gradient-editor/#e0dcd5+0,b2a179+71,b2a179+100&1+70,0+71
@@ -508,9 +513,10 @@ a, a:focus, a:active, a:hover, object, embed {
         }
     }
     @media all and (max-width: 479px) {
-        #bombs {
-            display: none;
+        #bGroundRight {
+            opacity: 0;
         }
+
         #leftSide, #rightSide{
             height: 700px;
         }
