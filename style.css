@@ -318,7 +318,7 @@ a, a:focus, a:active, a:hover, object, embed {
 
 #clouds{
     position: absolute;
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-image: url('pict/clouds.png');
     height: 303px;
     width: 450px;

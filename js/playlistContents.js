@@ -4,25 +4,53 @@ function startSongByName(trakTitle,players){
         for(keyTrak in player.playlist){
             var trak = player.playlist[keyTrak];
             if(trak.title == trakTitle){
-                setTimeout(function(){player.play(keyTrak);},100);// this way it works, have no time to discover reason
+                setTimeout(function(){
+                    
+                    $(player.cssSelector.menu).click(); // focus tab
+                    player.play(keyTrak); // play track
+                    $('a:contains("' + trakTitle + '")')
+                        .parent()
+                        .parent()
+                        .addClass("jp-playlist-current"); // focus track
+                    
+                },100);// this way it works, have no time to discover reason
                 return;
             }
         }
     }
 }
+var players;
         
 $(document).ready(function(){
 
 // ************************************************  Cyber Apocalypse
+
+var x = 1;
+var y = 1.1;
+var j = "asdasd";
+var arr = [x,y,j];
+var hhasd = arr[2]; // "asdasd"
+var css = {
+    div:{
+        "text-decoration":"underline",
+        "font-style":"bold"
+    },
+    width:"100px"
+};
+
+//$("#asdf").animate(css.div,1000,"inline");
+
+//objecto.x;
 
     var optioneThatYouNoNeedToDuplicate = {
         swfPath: "js",
         supplied: "oga, mp3",
         wmode: "window"
     };
-	var players = [new jPlayerPlaylist({
+	players = [new jPlayerPlaylist({
+                menu:"#cyberMenu",
 		jPlayer: "#jquery_jplayer_1",
-		cssSelectorAncestor: "#jp_container_1"
+		cssSelectorAncestor: "#jp_container_1",
 	}, [
 
             {title:"Depths of Universe",
@@ -78,6 +106,7 @@ $(document).ready(function(){
 // ************************************************  Experiments
 
         new jPlayerPlaylist({
+            menu:"#expMenu",
             jPlayer: "#jquery_jplayer_2",
             cssSelectorAncestor: "#jp_container_2"
 	}, [

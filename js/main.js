@@ -1,13 +1,20 @@
+function loopClouds(){
+    $('#clouds').animate({ 'background-position-x': '-450px'}, 20000, 'linear',function(){
+        $("#clouds").css({"background-position-x":"450px"});
+        loopClouds();
+    });
+}
+
 $(document).ready(function(){
-// Coda Slider
     $('#slider-id').codaSlider({
             dynamicTabs:false, 
             firstPanelToLoad: 11,
             slideEaseDuration: 400
     });
 
-// Clouds
-$('#clouds').animate({ 'background-position-x': '-100000000000%',}, 40000000000, 'linear');
+
+    loopClouds();
+    //$('#clouds').animate({ 'background-position-x': '-100000000000%',}, 40000000000, 'linear');
 
 
 // MENU Active element

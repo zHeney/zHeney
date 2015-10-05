@@ -44,8 +44,8 @@
 
                 <!-- Menu -->
                 <div id="menu">
-                    <p><a leftSideClass="beige" rightSideClass="boomBlock" href="#1" data-ref="slider-id another-slider">Cyber Apocalypse</a></p>
-                    <p><a leftSideClass="red" rightSideClass="flame" href="#2" data-ref="slider-id another-slider">Experiments</a></p>
+                    <p><a id="cyberMenu" leftSideClass="beige" rightSideClass="boomBlock" href="#1" data-ref="slider-id another-slider">Cyber Apocalypse</a></p>
+                    <p><a id="expMenu" leftSideClass="red" rightSideClass="flame" href="#2" data-ref="slider-id another-slider">Experiments</a></p>
                     <p><a leftSideClass="beige" rightSideClass="trip" href="#3" data-ref="slider-id another-slider">Trip</a></p>
                     <p><a leftSideClass="red" rightSideClass="treeBirds" href="#4" data-ref="slider-id another-slider">Gloomy-Hop</a></p>
                     <p><a leftSideClass="beige" rightSideClass="birds" href="#5" data-ref="slider-id another-slider">Lyric-Hop</a></p>
