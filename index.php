@@ -12,7 +12,7 @@
         <link rel="stylesheet" type="text/css" media="screen" href="coda-slider.css" />
         <link rel="stylesheet" href="jplayer/jplayer.css" />
 
-        <!--<script type="text/javascript" src="js/prefixfree.min.js"></script>-->
+
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.coda-slider-3.0.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
@@ -30,13 +30,13 @@
             <!-- **************** LEFTSIDE ****************** -->
             <div id="leftSide">
                 <div id="bGroundLeft" class="blue"></div>
+                <div id="rock"></div>
                 <div id="clouds"></div>
-                <div id="lines"></div>
                 <div id="legs"></div>
                 <div id="rings"></div>
                 <div id="hat"></div>		 
                 <div id="splash"></div>
-                <div id="rock"></div>
+                <div id="lines"></div>
                 <a href="#">
                     <h1 id="zHeney">zHeney</h1>
                     <h1 id="zHeney2">zHeney</h1>
@@ -44,17 +44,17 @@
 
                 <!-- Menu -->
                 <div id="menu">
-                    <p><a id="cyberMenu" leftSideClass="beige" rightSideClass="boomBlock" href="#1" data-ref="slider-id another-slider">Cyber Apocalypse</a></p>
-                    <p><a id="expMenu" leftSideClass="red" rightSideClass="flame" href="#2" data-ref="slider-id another-slider">Experiments</a></p>
-                    <p><a leftSideClass="beige" rightSideClass="trip" href="#3" data-ref="slider-id another-slider">Trip</a></p>
-                    <p><a leftSideClass="red" rightSideClass="treeBirds" href="#4" data-ref="slider-id another-slider">Gloomy-Hop</a></p>
-                    <p><a leftSideClass="beige" rightSideClass="birds" href="#5" data-ref="slider-id another-slider">Lyric-Hop</a></p>
-                    <p><a leftSideClass="red" rightSideClass="tape" href="#6" data-ref="slider-id another-slider">90bpm-HipHop</a></p>
-                    <p><a leftSideClass="beige" rightSideClass="cubes" href="#7" data-ref="slider-id another-slider">Electronic</a></p>
-                    <p><a leftSideClass="red" rightSideClass="rex" href="#8" data-ref="slider-id another-slider">Funky-Blues</a></p>
-                    <p><a leftSideClass="beige" rightSideClass="piano" href="#9" data-ref="slider-id another-slider">Piano-Guitar</a></p>
-                    <p><a leftSideClass="red" rightSideClass="orch" href="#10" data-ref="slider-id another-slider">Sympho</a></p>
-                    <p class="active"><a leftSideClass="blue" rightSideClass="cubes" href="#11" data-ref="slider-id another-slider">Contacts</a></p>
+                    <p><a id="cyber" leftSideClass="beige" rightSideClass="boomBlock" href="#1" data-ref="slider-id another-slider">Cyber Apocalypse</a></p>
+                    <p><a id="experiments" leftSideClass="red" rightSideClass="flame" href="#2" data-ref="slider-id another-slider">Experiments</a></p>
+                    <p><a id="trip" leftSideClass="blue" rightSideClass="trip" href="#3" data-ref="slider-id another-slider">Trip</a></p>
+                    <p><a id="gloomy" leftSideClass="blue" rightSideClass="treeBirds" href="#4" data-ref="slider-id another-slider">Gloomy-Hop</a></p>
+                    <p><a id="lyric" leftSideClass="blue" rightSideClass="birds" href="#5" data-ref="slider-id another-slider">Lyric-Hop</a></p>
+                    <p><a id="90bpm" leftSideClass="blue" rightSideClass="tape" href="#6" data-ref="slider-id another-slider">90bpm-HipHop</a></p>
+                    <p><a id="electronic" leftSideClass="blue" rightSideClass="cubes" href="#7" data-ref="slider-id another-slider">Electronic</a></p>
+                    <p><a id="funky" leftSideClass="blue" rightSideClass="rex" href="#8" data-ref="slider-id another-slider">Funky-Blues</a></p>
+                    <p><a id="piano" leftSideClass="blue" rightSideClass="piano" href="#9" data-ref="slider-id another-slider">Piano-Guitar</a></p>
+                    <p><a id="sympho" leftSideClass="blue" rightSideClass="orch" href="#10" data-ref="slider-id another-slider">Sympho</a></p>
+                    <p class="active"><a leftSideClass="blue" rightSideClass="eye1" href="#11" data-ref="slider-id another-slider">Contacts</a></p>
                 </div>
 
                 <!-- Slider -->
@@ -69,12 +69,10 @@
                 </div>
                 <!-- /CodaSlider -->
             </div><!--
-
         **************** RIGHTSIDE ****************** 
-            --><div id="rightSide">
-                <div id="bGroundRight">
-                    
-                </div>	
+         --><div id="rightSide">
+               	<div id="bGroundRight" class="eye1"></div>	
+               	<div id="gradientRight"></div>
             </div><!-- /container -->
         </div>
 
@@ -92,5 +90,6 @@
 
         <!-- analitics -->
         <?php require 'analitics.php'; ?>
+
     </body>
 </html>

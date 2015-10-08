@@ -23,7 +23,6 @@ var players;
         
 $(document).ready(function(){
 
-// ************************************************  Cyber Apocalypse
 
 var x = 1;
 var y = 1.1;
@@ -39,8 +38,9 @@ var css = {
 };
 
 //$("#asdf").animate(css.div,1000,"inline");
-
 //objecto.x;
+
+// ************************************************  Cyber Apocalypse
 
     var optioneThatYouNoNeedToDuplicate = {
         swfPath: "js",
@@ -48,7 +48,7 @@ var css = {
         wmode: "window"
     };
 	players = [new jPlayerPlaylist({
-                menu:"#cyberMenu",
+        menu:"#cyber",
 		jPlayer: "#jquery_jplayer_1",
 		cssSelectorAncestor: "#jp_container_1",
 	}, [
@@ -106,7 +106,7 @@ var css = {
 // ************************************************  Experiments
 
         new jPlayerPlaylist({
-            menu:"#expMenu",
+            menu:"#experiments",
             jPlayer: "#jquery_jplayer_2",
             cssSelectorAncestor: "#jp_container_2"
 	}, [
@@ -143,6 +143,7 @@ var css = {
 // ************************************************  Trip
 
 	new jPlayerPlaylist({
+        menu:"#trip",
 		jPlayer: "#jquery_jplayer_3",
 		cssSelectorAncestor: "#jp_container_3"
 	}, [
@@ -182,6 +183,7 @@ var css = {
 // ************************************************  Gloomy-Hop
 
         new jPlayerPlaylist({
+            menu:"#gloomy",
             jPlayer: "#jquery_jplayer_4",
             cssSelectorAncestor: "#jp_container_4"
 	}, [	
@@ -213,6 +215,7 @@ var css = {
 // ************************************************  Lyric-Hop
 
         new jPlayerPlaylist({
+            menu:"#lyric",
             jPlayer: "#jquery_jplayer_5",
             cssSelectorAncestor: "#jp_container_5"
 	}, [	
@@ -244,6 +247,7 @@ var css = {
 // ************************************************  90bpm-HipHop
 
         new jPlayerPlaylist({
+            menu:"#90bpm",
             jPlayer: "#jquery_jplayer_6",
             cssSelectorAncestor: "#jp_container_6"
 	}, [
@@ -290,6 +294,7 @@ var css = {
 // ************************************************  Electronic
 
         new jPlayerPlaylist({
+            menu:"#electronic",
             jPlayer: "#jquery_jplayer_7",
             cssSelectorAncestor: "#jp_container_7"
 	}, [
@@ -327,6 +332,7 @@ var css = {
 // ************************************************  Funky-Blues
 
         new jPlayerPlaylist({
+            menu:"#funky",
             jPlayer: "#jquery_jplayer_8",
             cssSelectorAncestor: "#jp_container_8"
 	}, [	
@@ -354,6 +360,7 @@ var css = {
 // ************************************************  Piano-Guitar
 
         new jPlayerPlaylist({
+            menu:"#piano",
             jPlayer: "#jquery_jplayer_9",
             cssSelectorAncestor: "#jp_container_9"
 	}, [						
@@ -387,6 +394,7 @@ var css = {
 // ************************************************  Sympho
 
         new jPlayerPlaylist({
+            menu:"#sympho",
             jPlayer: "#jquery_jplayer_10",
             cssSelectorAncestor: "#jp_container_10"
 	}, [						
@@ -437,7 +445,7 @@ var css = {
         
     ];
 
-    var hash = window.location.hash.substring(1); // ww'll store trak title in the hash
+    var hash = window.location.hash.substring(1); // ww'll store track title in the hash
     startSongByName(hash,players);
 
 });

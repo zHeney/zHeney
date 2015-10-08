@@ -2,7 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Ek+Mukta);
 
 body{
-    background-color: #373228;
+    background-color: #413B2F;
 }
 
 a{
@@ -17,6 +17,8 @@ a, a:focus, a:active, a:hover, object, embed {
 :focus{
     outline: 0;
 }
+
+#container{}
 
 #lines, #rings, #trees, #legs , #hat, #feet, #splash, #rock, #bombs, #boomFace, .birds, .tape{
     position:absolute;
@@ -166,9 +168,6 @@ a, a:focus, a:active, a:hover, object, embed {
     }
 }
 
-#container{
-    /* position: relative; */
-}
 
 /***************** LEFTTSIDE *******************/
 #leftSide, #rightSide{
@@ -243,8 +242,52 @@ a, a:focus, a:active, a:hover, object, embed {
     z-index: 1;
 }
 
+
+#hat{
+    background-image: url('pict/hat.png');
+    height: 217px;
+    width: 247px;
+    top: 0px;
+    left: 39%;
+    z-index: 1;
+}
+
+#splash{
+    background-image: url('pict/splash.png');
+    height: 469px;
+    width: 310px;
+    top: 0px;
+    right: -1px;
+    z-index: 0;
+}
+
+#clouds{
+    position: absolute;
+    background-repeat: repeat-x;
+    background-image: url('pict/clouds.png');
+    height: 303px;
+    width: 450px;
+    top: 24px;
+    right: 59%;
+    margin-right: -55px
+}
+
+#rock{
+    background-image: url('pict/rock.png');
+    right: -2px;
+    top: 0px;
+    height: 786px;
+    width: 72px;
+    z-index: 2;
+}
+
+@media all and (max-width: 1600px) {
+    #splash {
+        display: none;
+    }
+}
 @media all and (max-width: 980px) {
-    #rings {
+    #rings{
         display: none;
     }
     #legs{
@@ -256,16 +299,6 @@ a, a:focus, a:active, a:hover, object, embed {
         width: 100%;
     }
 }
-
-#hat{
-    background-image: url('pict/hat.png');
-    height: 217px;
-    width: 247px;
-    top: 0px;
-    left: 39%;
-    z-index: 1;
-}
-
 @media all and (max-width: 479px) {
     #menu{
         top: 79px;
@@ -301,46 +334,10 @@ a, a:focus, a:active, a:hover, object, embed {
     }
 }
 
-#splash{
-    background-image: url('pict/splash.png');
-    height: 469px;
-    width: 310px;
-    top: 0px;
-    right: -1px;
-    z-index: 0;
-}
-
-@media all and (max-width: 1600px) {
-    #splash {
-        display: none;
-    }
-}
-
-#clouds{
-    position: absolute;
-    background-repeat: no-repeat;
-    background-image: url('pict/clouds.png');
-    height: 303px;
-    width: 450px;
-    top: 24px;
-    right: 50%;
-}
-
-#rock{
-    background-image: url('pict/rock.png');
-    right: -2px;
-    top: 0px;
-    height: 800px;
-    width: 72px;
-}
-
 /***************** PLAYER *******************/
 
 #slider-id{
-
     z-index: 10;
-    /*box-shadow: 0px 0px 12px rgb(75, 69, 54);*/
-
 }
 
 #contacts{
@@ -376,37 +373,43 @@ a, a:focus, a:active, a:hover, object, embed {
             text-shadow: -2px 2px 9px rgba(65, 59, 47, 0.18), -3px 2px 3px rgba(47, 47, 47, 0.02);
         }
     
-            #contacts p:first-child a{
-                font-size: 25px;
-                color: #464031;
-            }
-            #contacts p:nth-child(2){ 
-            }   
-            #contacts p:nth-child(2) a{
-                font-size: 50px;
-                color: #4B4536;    
-            }
-            #contacts p:nth-child(3) a{
-                font-size: 22px;
-                color: #E1D5B0;    
-            }   
+        #contacts p:first-child a{
+            font-size: 25px;
+            color: #464031;
+        }
+        #contacts p:nth-child(2) a{
+            font-size: 50px;
+            color: #4B4536;    
+        }
+        #contacts p:nth-child(3) a{
+            font-size: 22px;
+            color: #E1D5B0;    
+        }   
 
 
 /***************** RIGHTSIDE *******************/
 
 #rightSide{
-    background: rgb(65,59,47);
-    background: -moz-linear-gradient(left,  rgba(65,59,47,1) 18%, rgba(65,59,47,1) 18%, rgba(75,69,54,1) 61%, rgba(55,50,40,1) 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(18%,rgba(65,59,47,1)), color-stop(18%,rgba(65,59,47,1)), color-stop(61%,rgba(75,69,54,1)), color-stop(100%,rgba(55,50,40,1)));
-    background: -webkit-linear-gradient(left,  rgba(65,59,47,1) 18%,rgba(65,59,47,1) 18%,rgba(75,69,54,1) 61%,rgba(55,50,40,1) 100%);
-    background: -o-linear-gradient(left,  rgba(65,59,47,1) 18%,rgba(65,59,47,1) 18%,rgba(75,69,54,1) 61%,rgba(55,50,40,1) 100%);
-    background: -ms-linear-gradient(left,  rgba(65,59,47,1) 18%,rgba(65,59,47,1) 18%,rgba(75,69,54,1) 61%,rgba(55,50,40,1) 100%);
-    background: linear-gradient(to right,  rgba(65,59,47,1) 18%,rgba(65,59,47,1) 18%,rgba(75,69,54,1) 61%,rgba(55,50,40,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#413b2f', endColorstr='#373228',GradientType=1 );
 
     width: 45%;
     max-width: 900px;
 }
+
+    #gradientRight{
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+        background: rgb(65,59,47);
+        background: -moz-linear-gradient(left,  rgba(65,59,47,1) 0%, rgba(143,130,104,0.1) 15%, rgba(237,235,220,0) 90%, rgba(65,59,47,1) 100%);
+        background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(65,59,47,1)), color-stop(15%,rgba(143,130,104,0.1)), color-stop(90%,rgba(237,235,220,0)), color-stop(100%,rgba(65,59,47,1)));
+        background: -webkit-linear-gradient(left,  rgba(65,59,47,1) 0%,rgba(143,130,104,0.1) 15%,rgba(237,235,220,0) 90%,rgba(65,59,47,1) 100%);
+        background: -o-linear-gradient(left,  rgba(65,59,47,1) 0%,rgba(143,130,104,0.1) 15%,rgba(237,235,220,0) 90%,rgba(65,59,47,1) 100%);
+        background: -ms-linear-gradient(left,  rgba(65,59,47,1) 0%,rgba(143,130,104,0.1) 15%,rgba(237,235,220,0) 90%,rgba(65,59,47,1) 100%);
+        background: linear-gradient(to right,  rgba(65,59,47,1) 0%,rgba(143,130,104,0.1) 15%,rgba(237,235,220,0) 90%,rgba(65,59,47,1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#413b2f', endColorstr='#413b2f',GradientType=1 );
+    }
 
     #bGroundRight{
         top: 0;
@@ -425,90 +428,37 @@ a, a:focus, a:active, a:hover, object, embed {
     }
     .birds{
         background: url('pict/birds.png') no-repeat center;
-        background-position-y: 60px;
+        background-position: 18px 45px;
     }
     .tape{
-        background: url('pict/tape.png') no-repeat center;
+        background: url('pict/tape.png') no-repeat 100px center;
     }
     .orch{
         background: url('pict/orch.png') no-repeat center;
     }
     .treeBirds{
-        background: url('pict/treeBirds.png') no-repeat center 203px;
+        background: url('pict/treeBirds.png') no-repeat 100px 193px;
     }
     .rex{
-        background: url('pict/rex.png') no-repeat center bottom;
+        background: url('pict/rex.png') no-repeat bottom;
     }
     .trip{
-        background: url('pict/trip.png') no-repeat center 69px;
+        background: url('pict/trip.png') no-repeat 69px;
     }
     .boomBlock{
         background: url('pict/bombs.png') top left,
-                    url('pict/boomFace.png') bottom right;
-                                     
+                    url('pict/boomFace.png') bottom right;                                     
         background-repeat: no-repeat;
     }
+    .eye1{
+        background: url('pict/eye1.jpg') no-repeat center;
+    }
+    .eye2{
+        background: url('pict/eye2.jpg') no-repeat center;
+    }
 
-/*        #bombs{
-            background-image: url('pict/bombs.png');
-            height: 672px;
-            width: 100%;
-            top: 36px;
-            left: 0;
-            z-index: 1;
-        }
-        
-        #boomFace{
-            background-image: url('pict/boomFace.png');
-            height: 725px;
-            width: 409px;
-            bottom: 0px;
-            z-index: 0;
-            right: 0;
-        }
-            #underBall{
-                position: absolute;
-                height: 253px;
-                width: 253px;
-                top: 77px;
-                right: 158px;
-            }
-    
-                #Ball, .ballBrown, .ballGreen, .ballBlue{                
-                    height: 253px;
-                    width: 253px;
-                }*/
-
-        /* gradient permalink
-        http://www.colorzilla.com/gradient-editor/#e0dcd5+0,b2a179+71,b2a179+100&1+70,0+71
-        */
-
-        .ballBlue{
-            background: -moz-radial-gradient(center, ellipse cover,  rgba(203,211,211,1) 0%, rgba(178,162,122,1) 70%, rgba(178,161,121,0) 71%, rgba(178,161,121,0) 100%);
-            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(203,211,211,1)), color-stop(70%,rgba(178,162,122,1)), color-stop(71%,rgba(178,161,121,0)), color-stop(100%,rgba(178,161,121,0)));
-            background: -webkit-radial-gradient(center, ellipse cover,  rgba(203,211,211,1) 0%,rgba(178,162,122,1) 70%,rgba(178,161,121,0) 71%,rgba(178,161,121,0) 100%);
-            background: -o-radial-gradient(center, ellipse cover,  rgba(203,211,211,1) 0%,rgba(178,162,122,1) 70%,rgba(178,161,121,0) 71%,rgba(178,161,121,0) 100%);
-            background: -ms-radial-gradient(center, ellipse cover,  rgba(203,211,211,1) 0%,rgba(178,162,122,1) 70%,rgba(178,161,121,0) 71%,rgba(178,161,121,0) 100%);
-            background: radial-gradient(ellipse at center,  rgba(203,211,211,1) 0%,rgba(178,162,122,1) 70%,rgba(178,161,121,0) 71%,rgba(178,161,121,0) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cbd3d3', endColorstr='#00b2a179',GradientType=1 );
-        }
-
-        .ballBrown{
-            background: -moz-radial-gradient(center, ellipse cover,  rgba(255,232,155,1) 0%, rgba(132,119,95,1) 70%, rgba(130,117,94,0) 71%, rgba(178,161,121,0) 100%);
-            background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,232,155,1)), color-stop(70%,rgba(132,119,95,1)), color-stop(71%,rgba(130,117,94,0)), color-stop(100%,rgba(178,161,121,0)));
-            background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,232,155,1) 0%,rgba(132,119,95,1) 70%,rgba(130,117,94,0) 71%,rgba(178,161,121,0) 100%);
-            background: -o-radial-gradient(center, ellipse cover,  rgba(255,232,155,1) 0%,rgba(132,119,95,1) 70%,rgba(130,117,94,0) 71%,rgba(178,161,121,0) 100%);
-            background: -ms-radial-gradient(center, ellipse cover,  rgba(255,232,155,1) 0%,rgba(132,119,95,1) 70%,rgba(130,117,94,0) 71%,rgba(178,161,121,0) 100%);
-            background: radial-gradient(ellipse at center,  rgba(255,232,155,1) 0%,rgba(132,119,95,1) 70%,rgba(130,117,94,0) 71%,rgba(178,161,121,0) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe89b', endColorstr='#00b2a179',GradientType=1 );
-        }
-
-        .ballGreen{
-
-        }
-  
     @media all and (max-width: 980px) {
-        #boomFace, #underBall {
+        #boomFace {
             display: none;
         }
     }
@@ -528,12 +478,13 @@ a, a:focus, a:active, a:hover, object, embed {
     bottom: 17px;
     height: 100%;
     width: 100%;
+    z-index: 10;
 }
     #bottomBoard_1, #bottomBoard_2, #bottomBoard_3{
         position: absolute;
         left: 0px;
         width: 100%;
-        height: 50px;
+        height: 50px;        
     }
 
     #bottomBoard_1{
@@ -552,7 +503,7 @@ a, a:focus, a:active, a:hover, object, embed {
         top: 100px;
         background-color: #4B4536;
     }
-    #wave {
+/*    #wave {
         height: 33px;
         width: 100%;
         top: 86px;
@@ -560,5 +511,5 @@ a, a:focus, a:active, a:hover, object, embed {
         background: url('pict/wave.png');
         background-size: 15px 15px;
         background-repeat-y: no-repeat;
-    }
+    }*/
 
