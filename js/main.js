@@ -8,7 +8,7 @@
 $(document).ready(function(){
 
     // loopClouds();
-    $('#clouds').animate({ 'background-position': '-100000000000%'}, 40000000000, 'linear');
+    // $('#clouds').animate({ 'background-position': '-100000000000%'}, 40000000000, 'linear');
 
 // codaSlider
     $('#slider-id').codaSlider({

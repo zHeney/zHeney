@@ -55,6 +55,7 @@
                     <p><a id="piano" leftSideClass="blue" rightSideClass="piano" href="#9" data-ref="slider-id another-slider">Piano-Guitar</a></p>
                     <p><a id="sympho" leftSideClass="blue" rightSideClass="orch" href="#10" data-ref="slider-id another-slider">Sympho</a></p>
                     <p class="active"><a leftSideClass="blue" rightSideClass="eye1" href="#11" data-ref="slider-id another-slider">Contacts</a></p>
+                    <p><a leftSideClass="blue" rightSideClass="about" href="#12" data-ref="slider-id another-slider">About</a></p>                    
                 </div>
 
                 <!-- Slider -->
@@ -65,6 +66,9 @@
                         <p><a target="blank" href="https://www.facebook.com/zheney.evgeny">facebook.com</a></p>
                         <p><a target="blank" href="https://vk.com/zheney">vk.com</a></p>
                         <p><a target="blank" href="http://zheney.deviantart.com/">deviantart.com</a></p>
+                    </div>
+                    <div id="about">
+                    	Hi, my name is zHeney
                     </div>
                 </div>
                 <!-- /CodaSlider -->
