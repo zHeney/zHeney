@@ -484,7 +484,7 @@ $(document).ready(function(){
 				a.click(); // focus tab
 
 		        player.play(keyTrak); // play track
-		        $('a:contains("' + hash + '"):first').parent().parent().addClass("jp-playlist-current"); // focus track
+		        $('a:contains("' + hash + '")').parent().parent().addClass("jp-playlist-current"); // focus track
 		        
 		    },100);// this way it works, have no time to discover reason
 		});
