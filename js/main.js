@@ -2,7 +2,7 @@
 $(document).ready(function(){
 
     // loopClouds();
-    // $('#clouds').animate({ 'background-position': '-100000000000%'}, 40000000000, 'linear');
+    $('#clouds').animate({ 'background-position': '100000000000000%'}, 40000000000000000, 'linear');
 
 // codaSlider
     $('#slider-id').codaSlider({
@@ -18,19 +18,13 @@ $(document).ready(function(){
     });
 
 // Contact hover    
-    // $("#contacts p").hover(handlerIn, function(){
+    // $("#contacts p").hover(function(){
     //     $("#bGroundRight").removeClass();
-    //     $("#bGroundRight").addClass("eye2");
-    // });
-
-    $("#contacts p").hover(function(){
-        $("#bGroundRight").removeClass();
-        $("#bGroundRight").addClass("eye2");},
-        function(){
-            $("#bGroundRight").removeClass();
-            $("#bGroundRight").addClass("eye1");}
-    );
-    // $("#contacts p a").hover(function(){$(this).fadeOut(100);$(this).fadeIn(100);});
+    //     $("#bGroundRight").addClass("eye2");},
+    //     function(){
+    //         $("#bGroundRight").removeClass();
+    //         $("#bGroundRight").addClass("eye1");}
+    // );
 
 // left/right Side backgrounds   
     var fadeTime = 400;
@@ -49,37 +43,8 @@ $(document).ready(function(){
         $("#bGroundRight").fadeOut(fadeTime,function(){
             $(this).removeClass().addClass(rightSideClass);
             $(this).fadeIn(fadeTime);
-        });        
- 
+        }); 
     });
-
-    //  **************************double Click switcher
-    // $('#menu p:first-child a').click(function(){
-    //     if ($("#leftSide").hasClass('blue')) {
-    //         $("#leftSide").removeClass('blue').addClass('beige');
-    //         return
-    //     }
-    //     $("#leftSide").removeClass('red').addClass('beige');
-    // });
-
-    // ************************* slideUp 
-    // $("#bombs").click(function() {
-    // $("#clouds").slideUp(1000);
-    // });
-
-    // ************************toggleClass
-    // $('#rings').click(function(){
-    // $(this).toggleClass('two');
-    // });
-
-    // ************************* switcher
-    // function toggle(el) {
-    //  if(el.style.display == 'none') {
-	//		el.style.display = '';
-	//	}else{ 
-	//		el.style.display = 'none';
-	//	}
-    // }
 
     // Player
     $(".jp-jplayer").jPlayer("volume", 1);
@@ -93,10 +58,9 @@ $(document).ready(function(){
         $(".jp-jplayer").jPlayer("stop");
     });
 
-
     // console.log($.jPlayer);	
+
 	var links = [
-		"pict/eye2.jpg",
 		"pict/boomFace.png",
 		"pict/piano.png",
 		"pict/flame.png",
@@ -110,8 +74,19 @@ $(document).ready(function(){
 		"pict/bombs.png",
 		"pict/boomFace.png"
 	];
-    for(var key in links){
-        $.get(links[key]);
-	}
+
+    setTimeout(function(){
+        for(var key in links){
+            $.get(links[key]);
+        }
+    }, 4000);
+
+
+
+
+
+
+
+
 
 });

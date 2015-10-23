@@ -497,7 +497,6 @@ div.jp-type-playlist div.jp-playlist li:first-child {
 
 div.jp-type-playlist div.jp-playlist li:last-child {
 	border-bottom:none;
-	padding-bottom:3px;
 }
 
 div.jp-type-playlist div.jp-playlist a {
@@ -510,7 +509,7 @@ div.jp-type-playlist div.jp-playlist a:hover {
 }
 
 div.jp-type-playlist div.jp-playlist li.jp-playlist-current {
-	background-color: #2e2310;
+	background-color: #2B2424;
 	/*margin: 0 -20px;*/
 	/*padding: 2px 20px;*/
 	border-top: 1px solid #2e2310;

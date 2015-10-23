@@ -19,7 +19,7 @@ function unMarkAsPlayingTab(){
 
 function markAsPlayingTab(tab){
 	unMarkAsPlayingTab();
-	bliming = setInterval(function(){tab.toggleClass("playing");},300); // comment it
+	bliming = setInterval(function(){tab.toggleClass("playing");},500); // comment it
 	//tab.addClass("playing"); // uncomment me
 }
 
@@ -40,7 +40,7 @@ $(document).ready(function(){
 
 	    
     $(".jp-jplayer").bind($.jPlayer.event.play,function (event){
-        window.location.hash = event.jPlayer.status.media.title;
+        window.location.hash = event.jPlayer.status.media.title.replace(/ /g, '_');
 		findPlayingPlayerByTrak(event.jPlayer.status.media.title,function(player,keyTrak){
 			var a = $(player.cssSelector.menu);
     		markAsPlayingTab(a.parent());
@@ -83,10 +83,8 @@ $(document).ready(function(){
 		cssSelectorAncestor: "#jp_container_1",
 	}, [
 
-            {
-				title:"Depths of Universe",
-            	mp3:"http://sukinsan.com/zheney/Cyber-Apocalypse/Depths_of_Universe.mp3"
-			},	
+            {title:"Depths of Universe",
+            mp3:"http://sukinsan.com/zheney/Cyber-Apocalypse/Depths_of_Universe.mp3"},	
 
             {title:"SleepinGhost",
             mp3:"http://sukinsan.com/zheney/Cyber-Apocalypse/SleepinGhost.mp3"},	
@@ -470,14 +468,14 @@ $(document).ready(function(){
             {title:"Thrill (HipHop ver.)",
             mp3:"http://sukinsan.com/zheney/Sympho/Thrill.mp3"},
 
-            {title:"History about one artist (HipHop ver.)",
+            {title:"About one artist (HipHop ver.)",
             mp3:"http://sukinsan.com/zheney/Sympho/History_about_one_artist.mp3"}
 
 	],optioneThatYouNoNeedToDuplicate),
         
     ];
 
-    var hash = window.location.hash.substring(1); // ww'll store track title in the hash
+    var hash = window.location.hash.substring(1).replace(/_/g, ' '); // ww'll store track title in the hash
     findPlayingPlayerByTrak(hash,function(player,keyTrak){
 		setTimeout(function(){
 		        var a = $(player.cssSelector.menu);
