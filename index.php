@@ -7,8 +7,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <link rel="stylesheet" href="cssReset.css" />
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="css/cssReset.css" />
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="css/coda-slider.css" />
+        <link rel="stylesheet" href="css/jplayer.css" />
 
     </head>
     <body>
@@ -82,15 +84,11 @@
         <!-- analitics -->
         <?php require 'analitics.php'; ?>
 
-        <link rel="stylesheet" type="text/css" media="screen" href="coda-slider.css" />
-        <link rel="stylesheet" href="jplayer/jplayer.css" />
-
         <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
         <script type="text/javascript" src="js/jquery.coda-slider-3.0.js"></script>
         <script type="text/javascript" src="js/jquery-ui-1.8.20.custom.min.js"></script>
         <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
         <script type="text/javascript" src="js/jplayer.playlist.min.js"></script>
-
         <script type="text/javascript" src="js/playlistContents.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>

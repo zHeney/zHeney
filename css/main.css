@@ -263,7 +263,7 @@ a, a:focus, a:active, a:hover, object, embed {
     }
 
 #lines{
-    background-image: url('pict/lines.png');
+    background-image: url('../pict/lines.png');
     background-repeat: no-repeat;
     height: 916px;
     top: -36px;
@@ -273,7 +273,7 @@ a, a:focus, a:active, a:hover, object, embed {
 }
 
 #rings{
-    background-image: url('pict/rings.png');
+    background-image: url('../pict/rings.png');
     height: 769px;
     width: 513px;
     top: 18px;
@@ -284,7 +284,7 @@ a, a:focus, a:active, a:hover, object, embed {
 
 #legs {
     display: none;
-    background-image: url('pict/legs.png');
+    background-image: url('../pict/legs.png');
     height: 588px;
     width: 195px;
     top: 199px;
@@ -295,7 +295,7 @@ a, a:focus, a:active, a:hover, object, embed {
 
 
 #hat{
-    background-image: url('pict/hat.png');
+    background-image: url('../pict/hat.png');
     height: 217px;
     width: 247px;
     top: 0px;
@@ -304,7 +304,7 @@ a, a:focus, a:active, a:hover, object, embed {
 }
 
 #splash{
-    background-image: url('pict/splash.png');
+    background-image: url('../pict/splash.png');
     height: 469px;
     width: 310px;
     top: 0px;
@@ -315,7 +315,7 @@ a, a:focus, a:active, a:hover, object, embed {
 #clouds{
     position: absolute;
     background-repeat: repeat-x;
-    background-image: url('pict/clouds.png');
+    background-image: url('../pict/clouds.png');
     height: 303px;
     width: 450px;
     top: 24px;
@@ -324,7 +324,7 @@ a, a:focus, a:active, a:hover, object, embed {
 }
 
 #rock{
-    background-image: url('pict/rock.png');
+    background-image: url('../pict/rock.png');
     right: -2px;
     top: 0px;
     height: 786px;
@@ -370,7 +370,7 @@ a, a:focus, a:active, a:hover, object, embed {
         display: none;
     }
     #lines{
-        background-image: url('pict/lines2.png');
+        background-image: url('../pict/lines2.png');
         top: 0px;
         height: 726px;
     }
@@ -392,17 +392,17 @@ a, a:focus, a:active, a:hover, object, embed {
 }
 
 #contacts{
-    background: -moz-linear-gradient(top,  rgba(150,127,87,0) 41%, rgba(62,53,49,0.3) 100%),url('pict/contactsBackground.png') 0px 90px no-repeat,
+    background: -moz-linear-gradient(top,  rgba(150,127,87,0) 41%, rgba(62,53,49,0.3) 100%),url('../pict/contactsBackground.png') 0px 90px no-repeat,
                 -moz-radial-gradient(center, ellipse cover,  rgba(240,230,221,0.43) 0%, rgba(179,162,122,1) 70%, rgba(178,161,121,0) 71%, rgba(178,161,121,0) 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(41%,rgba(150,127,87,0)), color-stop(100%,rgba(62,53,49,0.3))),url('pict/contactsBackground.png') 0px 90px no-repeat,
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(41%,rgba(150,127,87,0)), color-stop(100%,rgba(62,53,49,0.3))),url('../pict/contactsBackground.png') 0px 90px no-repeat,
                 -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(240,230,221,0.43)), color-stop(70%,rgba(179,162,122,1)), color-stop(71%,rgba(178,161,121,0)), color-stop(100%,rgba(178,161,121,0)));
-    background: -webkit-linear-gradient(top,  rgba(150,127,87,0) 41%,rgba(62,53,49,0.3) 100%),url('pict/contactsBackground.png') 0px 90px no-repeat,
+    background: -webkit-linear-gradient(top,  rgba(150,127,87,0) 41%,rgba(62,53,49,0.3) 100%),url('../pict/contactsBackground.png') 0px 90px no-repeat,
                 -webkit-radial-gradient(center, ellipse cover,  rgba(240,230,221,0.43) 0%,rgba(179,162,122,1) 70%,rgba(178,161,121,0) 71%,rgba(178,161,121,0) 100%);
-    background: -o-linear-gradient(top,  rgba(150,127,87,0) 41%,rgba(62,53,49,0.3) 100%),url('pict/contactsBackground.png') 0px 90px no-repeat,
+    background: -o-linear-gradient(top,  rgba(150,127,87,0) 41%,rgba(62,53,49,0.3) 100%),url('../pict/contactsBackground.png') 0px 90px no-repeat,
                 -o-radial-gradient(center, ellipse cover,  rgba(240,230,221,0.43) 0%,rgba(179,162,122,1) 70%,rgba(178,161,121,0) 71%,rgba(178,161,121,0) 100%);
-    background: -ms-linear-gradient(top,  rgba(150,127,87,0) 41%,rgba(62,53,49,0.3) 100%),url('pict/contactsBackground.png') 0px 90px no-repeat,
+    background: -ms-linear-gradient(top,  rgba(150,127,87,0) 41%,rgba(62,53,49,0.3) 100%),url('../pict/contactsBackground.png') 0px 90px no-repeat,
                 -ms-radial-gradient(center, ellipse cover,  rgba(240,230,221,0.43) 0%,rgba(179,162,122,1) 70%,rgba(178,161,121,0) 71%,rgba(178,161,121,0) 100%);
-    background: linear-gradient(to bottom,  rgba(150,127,87,0) 41%,rgba(62,53,49,0.3) 100%),url('pict/contactsBackground.png') 0px 90px no-repeat,
+    background: linear-gradient(to bottom,  rgba(150,127,87,0) 41%,rgba(62,53,49,0.3) 100%),url('../pict/contactsBackground.png') 0px 90px no-repeat,
                 radial-gradient(ellipse at center,  rgba(240,230,221,0.43) 0%,rgba(179,162,122,1) 70%,rgba(178,161,121,0) 71%,rgba(178,161,121,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00967f57', endColorstr='#4d3e3531',GradientType=0 );
     
@@ -480,43 +480,43 @@ a, a:focus, a:active, a:hover, object, embed {
     }
 
     .piano{
-        background: url('pict/piano.png') no-repeat center;
+        background: url('../pict/piano.png') no-repeat center;
     }
     .flame{
-        background: url('pict/flame.png') no-repeat center 0px;
+        background: url('../pict/flame.png') no-repeat center 0px;
     }
     .cubes{
-        background: url('pict/cubes.png') no-repeat center 0px;
+        background: url('../pict/cubes.png') no-repeat center 0px;
     }
     .birds{
-        background: url('pict/birds.png') no-repeat center;
+        background: url('../pict/birds.png') no-repeat center;
         background-position: 18px 45px;
     }
     .tape{
-        background: url('pict/tape.png') no-repeat 100px center;
+        background: url('../pict/tape.png') no-repeat 100px center;
     }
     .orch{
-        background: url('pict/orch.png') no-repeat center;
+        background: url('../pict/orch.png') no-repeat center;
     }
     .treeBirds{
-        background: url('pict/treeBirds.png') no-repeat 100px 193px;
+        background: url('../pict/treeBirds.png') no-repeat 100px 193px;
     }
     .rex{
-        background: url('pict/rex.png') no-repeat bottom;
+        background: url('../pict/rex.png') no-repeat bottom;
     }
     .trip{
-        background: url('pict/trip.png') no-repeat 69px;
+        background: url('../pict/trip.png') no-repeat 69px;
     }
     .boomBlock{
-        background: url('pict/bombs.png') top left,
-                    url('pict/boomFace.png') bottom right;                                     
+        background: url('../pict/bombs.png') top left,
+                    url('../pict/boomFace.png') bottom right;                                     
         background-repeat: no-repeat;
     }
     .eye1{
-        background: url('pict/eye1.jpg') no-repeat center;
+        background: url('../pict/eye1.jpg') no-repeat center;
     }
     .eye2{
-        background: url('pict/eye2.jpg') no-repeat center;
+        background: url('../pict/eye2.jpg') no-repeat center;
     }
 
     #gradientRight{
@@ -609,7 +609,7 @@ a, a:focus, a:active, a:hover, object, embed {
         width: 100%;
         top: 86px;
         position: absolute;
-        background: url('pict/wave.png');
+        background: url('../pict/wave.png');
         background-size: 15px 15px;
         background-repeat-y: no-repeat;
     }*/
