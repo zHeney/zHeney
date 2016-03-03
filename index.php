@@ -24,12 +24,12 @@
                 <div id="clouds"></div>
                 <div id="legs"></div>
                 <div id="rings"></div>
-                <div id="hat"></div>		 
+                <div id="hat"></div>
                 <div id="splash"></div>
                 <div id="lines"></div>
                 <h1 id="zHeney">zHeney</h1>
                 <h1 id="zHeney2">zHeney</h1>
-               
+
 
                 <!-- Menu -->
                 <div id="menu">
@@ -43,8 +43,8 @@
                     <p><a id="funky" leftSideClass="blue" rightSideClass="rex" href="#8" data-ref="slider-id another-slider">Funky-Blues</a></p>
                     <p><a id="piano" leftSideClass="purple" rightSideClass="piano" href="#9" data-ref="slider-id another-slider">Piano-Guitar</a></p>
                     <p><a id="sympho" leftSideClass="purple" rightSideClass="orch" href="#10" data-ref="slider-id another-slider">Sympho</a></p>
-                    <p class="active"><a leftSideClass="blue" rightSideClass="eye1" href="#11" data-ref="slider-id another-slider">Contacts</a></p>
-                    <!-- <p><a leftSideClass="blue" rightSideClass="about" href="#12" data-ref="slider-id another-slider">About</a></p>                     -->
+                    <p class="active"><a leftSideClass="blue"  href="#11" data-ref="slider-id another-slider">Contacts</a></p>
+                    <p><a leftSideClass="blue" rightSideClass="eye1" href="#12" data-ref="slider-id another-slider">About</a></p>
                 </div>
 
                 <!-- Slider -->
@@ -57,14 +57,14 @@
                         <p><a target="blank" href="http://zheney.deviantart.com/">deviantart.com</a></p>
                     </div>
                     <div id="about">
-                    	Hi, my name is zHeney
+                    	<div>Hi, my stage name is zHeney. I live in Ukraine and make music here. On this site there's a music player with different genre playlists that can be changed using tabs. This is a ten-year collection of my audio sketches, concepts, and also complete tracks.</div>
                     </div>
                 </div>
                 <!-- /CodaSlider -->
             </div><!--
-        **************** RIGHTSIDE ****************** 
+        **************** RIGHTSIDE ******************
          --><div id="rightSide">
-               	<div id="bGroundRight" class="eye1"></div>	
+               	<div id="bGroundRight" ></div>
                	<div id="gradientRight"></div>
             </div><!-- /container -->
         </div>
@@ -73,11 +73,11 @@
         <div id="bottomSide">
             <div id="bottomBoard_1"></div>
             <div id="bottomBoard_2"></div>
-            <div id="wave"></div> 
+            <div id="wave"></div>
             <div id="bottomBoard_3">
-                <a href="http://metrika.yandex.ru/stat/?id=17947261&amp;from=informer" target="_blank" rel="nofollow">	
+                <a href="http://metrika.yandex.ru/stat/?id=17947261&amp;from=informer" target="_blank" rel="nofollow">
                     <img src="//bs.yandex.ru/informer/17947261/3_0_4B4536FF_4B4536FF_1_pageviews" style="right: 0; width: 88px; height: 31px; border: 0; position: absolute;opacity: 0.3;" />
-                </a>                
+                </a>
             </div>
         </div>
 

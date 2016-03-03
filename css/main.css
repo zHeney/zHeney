@@ -1,17 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:900);
-@import url(https://fonts.googleapis.com/css?family=Ek+Mukta);
-
 body{
+
     background-color: #1D1A14;
 }
 
-a{  
+a{
     text-shadow: -1px 1px 1px rgba(182, 171, 142, 0.37);
     color: #3E3531;
 }
 
 a, a:focus, a:active, a:hover, object, embed {
-    outline: none; 
+    outline: none;
     text-decoration: none;
 }
 
@@ -25,7 +23,7 @@ a, a:focus, a:active, a:hover, object, embed {
 
 #lines, #rings, #trees, #legs, #hat, #feet, #splash, #rock{
     position:absolute;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
 #menu, #zHeney, #zHeney2, #slider-id {
@@ -54,7 +52,7 @@ a, a:focus, a:active, a:hover, object, embed {
         border-bottom: 1px solid #4B4536;
         padding-right: 4px;
     }
-    #menu p{         
+    #menu p{
         background: -moz-linear-gradient(left,  rgba(150,127,87,0) 90%, rgba(62,53,49,0.3) 100%);
         background: -webkit-gradient(linear, left top, right top, color-stop(90%,rgba(150,127,87,0)), color-stop(100%,rgba(62,53,49,0.3)));
         background: -webkit-linear-gradient(left,  rgba(150,127,87,0) 90%,rgba(62,53,49,0.3) 100%);
@@ -67,13 +65,13 @@ a, a:focus, a:active, a:hover, object, embed {
         box-shadow: inset -2px -6px 0px rgba(0, 0, 0, 0.12);
         border-bottom: 1px solid #4B4536;
         border-right: 2px solid #4B4536;
-        background-color: rgb(148, 127, 86);       
+        background-color: rgb(148, 127, 86);
         padding: 6px 6px 3px 6px;
-    
+
         -webkit-transition: all 400ms ease;
            -moz-transition: all 400ms ease;
              -o-transition: all 400ms ease;
-                transition: all 400ms ease;   
+                transition: all 400ms ease;
     }
 
         #menu p:first-child{
@@ -81,38 +79,38 @@ a, a:focus, a:active, a:hover, object, embed {
             border-top-left-radius: 11% 27%;
         }
         #menu p:nth-child(2){
-    
+
         }
         #menu p:nth-child(3){
-    
+
         }
         #menu p:nth-child(4){
-    
+
         }
         #menu p:nth-child(5){
-    
+
         }
         #menu p:nth-child(6){
-    
+
         }
         #menu p:nth-child(7){
-    
+
         }
         #menu p:nth-child(8){
-    
+
         }
         #menu p:nth-child(9){
-    
+
         }
         #menu p:nth-child(10){
-    
+
         }
         #menu p:nth-child(11){
             background-color: rgb(137, 138, 108);
-        }        
+        }
         #menu p:nth-child(12){
             background-color: rgb(137, 138, 108);
-        }     
+        }
 
         #menu p:first-letter {
             color: #EBE4AF;
@@ -130,14 +128,14 @@ a, a:focus, a:active, a:hover, object, embed {
         #menu a {
             padding-right: 0px;
         }
-    
+
 #zHeney, #zHeney2{
     display: none;
     position: absolute;
     right: 59%;
     top: 805px;
     opacity: 0.8;
-    font-size: 127px;  
+    font-size: 127px;
     font-family: 'Alegreya Sans SC', sans-serif;
     color: rgb(170, 171, 134);
     line-height: 0.5;
@@ -146,7 +144,7 @@ a, a:focus, a:active, a:hover, object, embed {
     text-shadow: 0px 1px 1px #FFDFB6, 3px 0px 2px rgb(75, 69, 54);
 }
 
-#zHeney2{    
+#zHeney2{
     top: 795px;
     color: #585858;
     /*text-shadow: 0 0 5px #585858;*/
@@ -166,8 +164,8 @@ a, a:focus, a:active, a:hover, object, embed {
     }
     #zHeney2{
         top: 29px;
-    }    
-    #zHeney, #zHeney2 {        
+    }
+    #zHeney, #zHeney2 {
         display: block;
         font-size: 37px;
         margin-right: -62px;
@@ -205,10 +203,10 @@ a, a:focus, a:active, a:hover, object, embed {
         background: radial-gradient(farthest-side at 54% 370px, #FFF8E4, rgba(122, 151, 152, 0)),
                     linear-gradient(to bottom, rgba(122,151,152,1) 41%,rgba(59,50,46,1) 100%);
 
-        background: -webkit-radial-gradient(54% 370px, circle , rgb(255, 248, 228), rgba(122, 151, 152, 0)),   
+        background: -webkit-radial-gradient(54% 370px, circle , rgb(255, 248, 228), rgba(122, 151, 152, 0)),
                     -webkit-gradient(linear, left top, left bottom, color-stop(41%,rgb(122, 151, 152)), color-stop(100%,rgb(59, 50, 46)));
 
-        background: -moz-radial-gradient(54% 370px, circle , rgb(255, 248, 228), rgba(122, 151, 152, 0)),   
+        background: -moz-radial-gradient(54% 370px, circle , rgb(255, 248, 228), rgba(122, 151, 152, 0)),
                     -moz-linear-gradient(top, rgba(122,151,152,1) 41%, rgba(59,50,46,1) 100%);
     }
     .cold{
@@ -229,36 +227,36 @@ a, a:focus, a:active, a:hover, object, embed {
     .desert{
         background: radial-gradient(farthest-side at 130% 400px, #F7FF84, #C49B50);
         background: -webkit-radial-gradient(130% 400px, circle closest-corner, #F7FF84, #C49B50);
-        background: -moz-radial-gradient(130% 400px, circle closest-corner, #F7FF84, #C49B50);        
+        background: -moz-radial-gradient(130% 400px, circle closest-corner, #F7FF84, #C49B50);
     }
     .gray{
         background: radial-gradient(farthest-side at 54% 370px, rgb(255, 249, 208), rgba(122, 151, 152, 0)),
                     linear-gradient(to bottom, rgb(43, 36, 36) 41%,rgb(29, 27, 24) 100%);
 
-        background: -webkit-radial-gradient(54% 370px, circle , rgb(255, 249, 208), rgba(122, 151, 152, 0)), 
+        background: -webkit-radial-gradient(54% 370px, circle , rgb(255, 249, 208), rgba(122, 151, 152, 0)),
                     -webkit-gradient(linear, left top, left bottom, color-stop(41%,rgb(43, 36, 36)), color-stop(100%,rgb(29, 27, 24)));
 
-        background: -moz-radial-gradient(54% 370px, circle , rgb(255, 248, 228), rgba(122, 151, 152, 0)),   
+        background: -moz-radial-gradient(54% 370px, circle , rgb(255, 248, 228), rgba(122, 151, 152, 0)),
                     -moz-linear-gradient(top, rgb(43, 36, 36) 41%, rgb(29, 27, 24) 100%);
     }
     .redFog{
         background: radial-gradient(farthest-side at 54% 370px, #F08484, rgba(122, 151, 152, 0)),
                     linear-gradient(to bottom, #423C30 41%, #A59A80 100%);
 
-        background: -webkit-radial-gradient(54% 370px, circle , #F08484, rgba(122, 151, 152, 0)), 
+        background: -webkit-radial-gradient(54% 370px, circle , #F08484, rgba(122, 151, 152, 0)),
                     -webkit-gradient(linear, left top, left bottom, color-stop(41%,#423C30), color-stop(100%,#A59A80));
 
-        background: -moz-radial-gradient(54% 370px, circle , #F08484, rgba(122, 151, 152, 0)),   
-                    -moz-linear-gradient(top, #423C30 41%, #A59A80 100%);   
-    }  
+        background: -moz-radial-gradient(54% 370px, circle , #F08484, rgba(122, 151, 152, 0)),
+                    -moz-linear-gradient(top, #423C30 41%, #A59A80 100%);
+    }
     .purple{
         background: radial-gradient(farthest-side at 54% 370px, #D69D9D, rgba(122, 151, 152, 0)),
                     linear-gradient(to bottom, #191F2F 41%, #676B8C 100%);
 
-        background: -webkit-radial-gradient(54% 370px, circle , #D69D9D, rgba(122, 151, 152, 0)), 
+        background: -webkit-radial-gradient(54% 370px, circle , #D69D9D, rgba(122, 151, 152, 0)),
                     -webkit-gradient(linear, left top, left bottom, color-stop(41%,#191F2F), color-stop(100%,#676B8C));
-            
-        background: -moz-radial-gradient(54% 370px, circle , #D69D9D, rgba(122, 151, 152, 0)),   
+
+        background: -moz-radial-gradient(54% 370px, circle , #D69D9D, rgba(122, 151, 152, 0)),
                     -moz-linear-gradient(top, #191F2F 41%, #676B8C 100%);
     }
 
@@ -359,12 +357,12 @@ a, a:focus, a:active, a:hover, object, embed {
     }
     #menu p {
         padding: 12px 6px 10px 6px ;
-    }    
+    }
     #menu p:nth-child(5){
         margin-left: -32px;
     }
     #menu, #hat{
-        left: 50%; 
+        left: 50%;
     }
     #hat{
         display: none;
@@ -379,7 +377,7 @@ a, a:focus, a:active, a:hover, object, embed {
         top: 99px;
         left: 50%;
         margin-left: 28px;
-    }   
+    }
     #clouds{
         display: none;
     }
@@ -405,7 +403,7 @@ a, a:focus, a:active, a:hover, object, embed {
     background: linear-gradient(to bottom,  rgba(150,127,87,0) 41%,rgba(62,53,49,0.3) 100%),url('../pict/contactsBackground.png') 0px 90px no-repeat,
                 radial-gradient(ellipse at center,  rgba(240,230,221,0.43) 0%,rgba(179,162,122,1) 70%,rgba(178,161,121,0) 71%,rgba(178,161,121,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00967f57', endColorstr='#4d3e3531',GradientType=0 );
-    
+
     background-color: #AEA080;
     border-top-left-radius: 15% 10%;
     display: inline-block;
@@ -422,19 +420,22 @@ a, a:focus, a:active, a:hover, object, embed {
             font-family: 'Alegreya Sans SC', sans-serif;
             vertical-align: -webkit-baseline-middle;
             text-shadow: -2px 2px 9px rgba(65, 59, 47, 0.18), -3px 2px 3px rgba(47, 47, 47, 0.02);
+            -webkit-transition: text-shadow 400ms;
+            -o-transition: text-shadow 400ms;
+            transition: text-shadow 400ms;
         }
-    
+
         #contacts p:first-child a{
             font-size: 25px;
             color: #464031;
         }
         #contacts p:nth-child(2) a{
             font-size: 50px;
-            color: #4B4536;    
+            color: #4B4536;
         }
         #contacts p:nth-child(3) a{
             font-size: 22px;
-            color: #E1D5B0;    
+            color: #E1D5B0;
         }
         #contacts p a:hover{
             text-shadow: 0px 2px 19px #E0D0AB;
@@ -454,7 +455,7 @@ a, a:focus, a:active, a:hover, object, embed {
     background: linear-gradient(to bottom,  rgba(150,127,87,0) 41%,rgba(62,53,49,0.3) 100%),
                 radial-gradient(ellipse at center,  rgba(240,230,221,0.43) 0%,rgba(179,162,122,1) 70%,rgba(178,161,121,0) 71%,rgba(178,161,121,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00967f57', endColorstr='#4d3e3531',GradientType=0 );
-    
+
     font-family: 'Alegreya Sans SC', sans-serif;
     color: #E1D5B0;
     background-color: #AEA080;
@@ -465,6 +466,14 @@ a, a:focus, a:active, a:hover, object, embed {
     text-align: center;
     box-shadow: inset 4px 0px 61px rgba(0,0,0,0.2), inset 0px 54px 0px 1px rgba(99, 86, 58, 0.3), inset -6px 1px 13px 0px rgba(255, 255, 255, 0.23);
 }
+    #about > div{
+        font-family: 'Alegreya', serif;
+        margin-top: 77px;
+        font-size: 20px;
+        color: #5D5547;
+        text-rendering: optimizeLegibility;
+        text-shadow: -1px 1px 1px rgba(255, 255, 255, 0.3);
+    }
 
 /***************** RIGHTSIDE *******************/
 
@@ -509,7 +518,7 @@ a, a:focus, a:active, a:hover, object, embed {
     }
     .boomBlock{
         background: url('../pict/bombs.png') top left,
-                    url('../pict/boomFace.png') bottom right;                                     
+                    url('../pict/boomFace.png') bottom right;
         background-repeat: no-repeat;
     }
     .eye1{
@@ -565,7 +574,7 @@ a, a:focus, a:active, a:hover, object, embed {
         position: absolute;
         left: 0px;
         width: 100%;
-        height: 50px;        
+        height: 50px;
     }
 
     #bottomBoard_1{
@@ -579,7 +588,7 @@ a, a:focus, a:active, a:hover, object, embed {
         background: -ms-linear-gradient(top, rgba(92,87,74,1) 0%,rgba(65,60,47,1) 50%,rgba(62,57,44,1) 100%);
         background: linear-gradient(to bottom, rgba(92,87,74,1) 0%,rgba(65,60,47,1) 50%,rgba(62,57,44,1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5c574a', endColorstr='#3e392c',GradientType=0 );
-    }    
+    }
     #bottomBoard_2{
         top: 50px;
 
@@ -591,10 +600,10 @@ a, a:focus, a:active, a:hover, object, embed {
        background: -ms-linear-gradient(top,  rgba(39,33,21,1) 1%,rgba(49,43,31,1) 100%);
        background: linear-gradient(to bottom,  rgba(39,33,21,1) 1%,rgba(49,43,31,1) 100%);
        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#272115', endColorstr='#312b1f',GradientType=0 );
-    }    
+    }
     #bottomBoard_3{
         top: 100px;
-        
+
         background: rgb(25,19,7);
         background: -moz-linear-gradient(top,  rgba(25,19,7,1) 0%, #1D1A14 9%);
         background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(25,19,7,1)), color-stop(9%, #1D1A14));
