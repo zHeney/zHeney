@@ -1,8 +1,8 @@
 
 $(document).ready(function(){
 
-    // loopClouds();
-    // $('#clouds').animate({ 'background-position': '100000000000000%'}, 40000000000000000, 'linear');
+    // LOOPCLOUDS
+    $('#clouds').animate({ 'background-position': '100000000000000%'}, 40000000000000000, 'linear');
 
 // codaSlider
     $('#slider-id').codaSlider({
@@ -72,7 +72,8 @@ $(document).ready(function(){
 		"pict/rex.png",
 		"pict/trip.png",
 		"pict/bombs.png",
-		"pict/boomFace.png"
+		"pict/boomFace.png",
+        "pict/eye1.png"
 	];
 
     setTimeout(function(){
